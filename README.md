@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Revenue Accelerator Technology — website
 
-## Getting Started
+Marketing site built with Next.js 16 (App Router), TypeScript, and Tailwind CSS v4.
 
-First, run the development server:
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/app/          layout (fonts, metadata), page composition, globals.css, icon.svg
+src/components/   one file per page section, plus Logo / Button / Sparkline primitives
+src/lib/content.ts  all page copy and data — edit here, not in the components
+public/brand/     standalone logo mark SVGs (dark and light grounds)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Every string on the page comes from `src/lib/content.ts`. Change copy, nav, FAQs,
+case studies, and footer links there; the components read from it.
 
-## Learn More
+## Design system
 
-To learn more about Next.js, take a look at the following resources:
+Tokens live in the `@theme` block at the top of `src/app/globals.css`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Token | Value | Use |
+| --- | --- | --- |
+| `--color-ink` | `#0E1B1E` | Body text, dark bands |
+| `--color-slate` | `#162C31` | Raised surfaces on dark |
+| `--color-mineral` | `#E9EDE9` | Alternating light band |
+| `--color-paper` | `#FBFCFA` | Page ground, cards |
+| `--color-signal` | `#FF5C2B` | Accent — CTAs, metrics, eyebrows |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Type: **Bricolage Grotesque** (display), **Inter** (body), **IBM Plex Mono**
+(eyebrows, metrics). The recurring device is the sparkline in `Sparkline.tsx` —
+a bare trend line with no axes, used wherever a number needs a direction.
 
-## Deploy on Vercel
+The logo mark is three bars whose gaps widen as they rise: acceleration rather
+than linear growth. It is drawn inline in `src/components/Logo.tsx` so it picks
+up theme colors, with static copies in `public/brand/`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Before launch — placeholder content to replace
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The layout is production-ready; the content is not. Replace before going live:
+
+- **All metrics** — stats band, case-study figures, review scores, hero ticker
+- **Client and press names** in `clients` / `press` — currently invented
+- **Testimonials** — invented names, roles, and quotes
+- **Contact details** — phone, email, and address are placeholders
+- **Certification badges** — only claim partner status once it is granted
+- Footer and nav links all point to `#`; wire them up as pages are built
