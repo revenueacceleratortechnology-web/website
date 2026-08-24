@@ -1,26 +1,18 @@
 import { clients } from "@/lib/content";
 
 export function LogoRail() {
-  const row = [...clients, ...clients];
-
   return (
-    <section className="border-b border-hairline bg-paper py-9">
-      <p className="eyebrow shell mb-7 text-ash">
-        Trusted by brands in 14 categories
-      </p>
+    <section className="border-b border-hairline bg-paper py-12 md:py-14">
+      <div className="shell">
+        <p className="text-center text-sm text-ash">
+          Trusted by brands across 14 categories on Amazon, Walmart, and Shopify
+        </p>
 
-      <div
-        className="rail relative overflow-hidden"
-        style={{
-          maskImage:
-            "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
-        }}
-      >
-        <ul className="rail-track items-center gap-12 px-6">
-          {row.map((name, i) => (
+        <ul className="mt-8 grid grid-cols-2 justify-items-center gap-x-8 gap-y-7 sm:grid-cols-3 lg:grid-cols-6">
+          {clients.slice(0, 12).map((name) => (
             <li
-              key={`${name}-${i}`}
-              className="display shrink-0 text-xl text-ink/35 transition-colors duration-300 hover:text-ink"
+              key={name}
+              className="display text-center text-lg text-ink/35 transition-colors duration-300 hover:text-ink"
             >
               {name}
             </li>

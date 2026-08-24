@@ -4,7 +4,7 @@ import { useState } from "react";
 import { faqs } from "@/lib/content";
 
 export function Faq() {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   return (
     <section id="resources" className="band border-b border-hairline bg-paper">

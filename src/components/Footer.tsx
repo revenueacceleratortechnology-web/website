@@ -5,7 +5,7 @@ import { footer, socials, site } from "@/lib/content";
 export function Footer() {
   return (
     <footer id="contact" className="bg-ink text-paper">
-      <div className="shell py-16 md:py-20">
+      <div className="shell py-16 pb-28 md:py-20 lg:pb-20">
         <div className="grid gap-12 lg:grid-cols-[1fr_2.4fr] lg:gap-16">
           <div>
             <Logo invert />

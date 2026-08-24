@@ -110,12 +110,26 @@ export const nav: NavGroup[] = [
   },
 ];
 
+export const utilityNav = [
+  { label: "Events", href: "#resources" },
+  { label: "Resources", href: "#resources" },
+  { label: "Careers", href: "#company" },
+  { label: "Contact us", href: "#audit" },
+];
+
+export const promo = {
+  headline: "Get a free listing teardown with any audit booked this month.",
+  body: "We record a 15-minute walkthrough of your three worst-performing listings.",
+  cta: { label: "Book a call", href: "#audit" },
+};
+
 export const hero = {
   eyebrow: "Amazon · Walmart · Shopify",
   headline: ["Your marketplace revenue,", "engineered to compound."],
   body: "We run advertising, listings, creative, and catalog operations for brands that have outgrown doing it in-house. One team, one plan, one number to move.",
   primary: { label: "Get a free account audit", href: "#audit" },
   secondary: { label: "See client results", href: "#results" },
+  tertiary: { lead: "Not sure where to start?", label: "Get a free listing audit", href: "#audit" },
   ticker: [
     { label: "Ad-attributed sales", value: "+64%", trend: [8, 11, 10, 15, 19, 24, 31, 38] },
     { label: "Blended TACoS", value: "−7.2pt", trend: [38, 34, 33, 28, 24, 21, 17, 14] },
@@ -133,24 +147,28 @@ export const pillars = [
   {
     code: "01",
     title: "Advertising",
+    href: "#services",
     body: "Sponsored Products, Brands, Display, and DSP managed against profit — not impressions. Weekly bid governance and search-term hygiene.",
     points: ["Campaign architecture rebuilds", "Dayparting & placement control", "DSP retargeting", "Profit-weighted bidding"],
   },
   {
     code: "02",
     title: "Search & listings",
+    href: "#services",
     body: "Indexation, keyword coverage, and conversion copy built from live search data — so paid traffic stops subsidizing weak pages.",
     points: ["Keyword & indexation audits", "Title, bullet, backend copy", "Variation strategy", "Review velocity"],
   },
   {
     code: "03",
     title: "Creative",
+    href: "#services",
     body: "Main images, infographics, A+ modules, Brand Store, and video produced in-house and tested against conversion rate.",
     points: ["Image stack testing", "A+ / Premium A+ modules", "Brand Store builds", "Short-form video"],
   },
   {
     code: "04",
     title: "Operations",
+    href: "#services",
     body: "The unglamorous work that protects revenue: suppressed listings, stranded inventory, case escalation, and reimbursements.",
     points: ["Catalog & flat-file fixes", "Case management", "Inventory forecasting", "Reimbursement recovery"],
   },
@@ -164,6 +182,7 @@ export const badges = [
 
 export const caseStudies = [
   {
+    href: "#results",
     category: "Supplements",
     headline: "Rebuilt campaign structure after two years of flat spend",
     metric: "+212%",
@@ -175,6 +194,7 @@ export const caseStudies = [
     trend: [10, 12, 14, 13, 20, 28, 36, 47, 58, 72],
   },
   {
+    href: "#results",
     category: "Home & kitchen",
     headline: "Fixed catalog suppression, then scaled the winning variation",
     metric: "+$4.1M",
@@ -186,6 +206,7 @@ export const caseStudies = [
     trend: [22, 20, 24, 30, 29, 38, 45, 52, 61, 68],
   },
   {
+    href: "#results",
     category: "Beauty",
     headline: "Creative testing lifted conversion before spend increased",
     metric: "+58%",
@@ -308,6 +329,14 @@ export const faqs = [
     q: "How do we start?",
     a: "Book a 30-minute call. We look at your account together, and you leave with two or three specific things to fix regardless of what you decide.",
   },
+];
+
+export const revenueBands = [
+  "Under $1M",
+  "$1M – $5M",
+  "$5M – $20M",
+  "$20M – $60M",
+  "Over $60M",
 ];
 
 export const footer = [

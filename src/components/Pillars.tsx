@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { pillars, badges } from "@/lib/content";
 
 export function Pillars() {
@@ -17,8 +18,9 @@ export function Pillars() {
 
         <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-4">
           {pillars.map((p) => (
-            <article
+            <Link
               key={p.title}
+              href={p.href}
               className="group flex flex-col bg-paper p-7 transition-colors duration-300 hover:bg-mineral/70"
             >
               <span className="font-mono text-xs text-signal">{p.code}</span>
@@ -38,7 +40,25 @@ export function Pillars() {
                   </li>
                 ))}
               </ul>
-            </article>
+
+              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-signal">
+                Explore
+                <svg
+                  viewBox="0 0 14 10"
+                  className="h-2.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M1 5h11M8.5 1.5L12 5l-3.5 3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            </Link>
           ))}
         </div>
 

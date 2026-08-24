@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./Button";
 import { Sparkline } from "./Sparkline";
 import { hero } from "@/lib/content";
@@ -17,11 +18,11 @@ export function Hero() {
         }}
       />
 
-      <div className="shell relative grid gap-14 py-16 md:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16 lg:py-28">
+      <div className="shell relative grid gap-10 py-12 md:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-14 lg:py-16">
         <div>
           <p className="eyebrow rise text-signal">{hero.eyebrow}</p>
 
-          <h1 className="display mt-6 text-[length:var(--text-mega)]">
+          <h1 className="display mt-5 text-[length:var(--text-mega)]">
             {hero.headline.map((line, i) => (
               <span
                 key={line}
@@ -34,27 +35,36 @@ export function Hero() {
           </h1>
 
           <p
-            className="rise mt-7 max-w-xl text-lg leading-relaxed text-ash"
+            className="rise mt-5 max-w-xl text-[1.0625rem] leading-relaxed text-ash"
             style={{ animationDelay: "0.28s" }}
           >
             {hero.body}
           </p>
 
           <div
-            className="rise mt-9 flex flex-wrap items-center gap-3"
+            className="rise mt-7 flex flex-wrap items-center gap-3"
             style={{ animationDelay: "0.36s" }}
           >
-            <Button href={hero.primary.href}>{hero.primary.label}</Button>
-            <Button href={hero.secondary.href} variant="ghost">
+            <Button href={hero.primary.href} arrow>
+              {hero.primary.label}
+            </Button>
+            <Button href={hero.secondary.href} variant="ghost" arrow>
               {hero.secondary.label}
             </Button>
           </div>
 
           <p
-            className="rise mt-6 text-sm text-ash"
+            className="rise mt-5 text-sm text-ash"
             style={{ animationDelay: "0.42s" }}
           >
-            No ad-spend percentage. No annual lock-in. Audit is yours to keep.
+            {hero.tertiary.lead}{" "}
+            <Link
+              href={hero.tertiary.href}
+              className="font-medium text-ink underline decoration-signal decoration-2 underline-offset-4 transition-colors hover:text-signal"
+            >
+              {hero.tertiary.label}
+            </Link>
+            . No ad-spend percentage, no annual lock-in.
           </p>
         </div>
 

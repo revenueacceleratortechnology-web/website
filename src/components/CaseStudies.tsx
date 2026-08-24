@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Sparkline } from "./Sparkline";
 import { Button } from "./Button";
 import { caseStudies } from "@/lib/content";
@@ -13,16 +14,17 @@ export function CaseStudies() {
               The work, with the numbers attached.
             </h2>
           </div>
-          <Button href="#results" variant="ghost-dark">
+          <Button href="#results" variant="ghost-dark" arrow>
             All case studies
           </Button>
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
           {caseStudies.map((c) => (
-            <article
+            <Link
               key={c.headline}
-              className="flex flex-col rounded-2xl border border-hairline-dark bg-slate p-7 transition-colors duration-300 hover:border-signal/60"
+              href={c.href}
+              className="group flex flex-col rounded-2xl border border-hairline-dark bg-slate p-7 transition-colors duration-300 hover:border-signal/60"
             >
               <p className="eyebrow text-ash">{c.category}</p>
 
@@ -47,7 +49,25 @@ export function CaseStudies() {
                   </div>
                 ))}
               </dl>
-            </article>
+
+              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-signal">
+                Read the case study
+                <svg
+                  viewBox="0 0 14 10"
+                  className="h-2.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M1 5h11M8.5 1.5L12 5l-3.5 3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            </Link>
           ))}
         </div>
 

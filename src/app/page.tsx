@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { PromoStrip } from "@/components/PromoStrip";
 import { LogoRail } from "@/components/LogoRail";
 import { Pillars } from "@/components/Pillars";
 import { CaseStudies } from "@/components/CaseStudies";
@@ -10,6 +11,7 @@ import { Process } from "@/components/Process";
 import { Faq } from "@/components/Faq";
 import { CtaBand } from "@/components/CtaBand";
 import { Footer } from "@/components/Footer";
+import { StickyContact } from "@/components/StickyContact";
 
 export default function Home() {
   return (
@@ -25,6 +27,7 @@ export default function Home() {
 
       <main id="main" className="flex-1">
         <Hero />
+        <PromoStrip />
         <LogoRail />
         <Pillars />
         <CaseStudies />
@@ -37,6 +40,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <StickyContact />
     </>
   );
 }
