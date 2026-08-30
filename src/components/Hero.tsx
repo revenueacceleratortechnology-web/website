@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "./Button";
-import { Sparkline } from "./Sparkline";
+import { DashboardMock } from "./DashboardMock";
 import { hero } from "@/lib/content";
 
 export function Hero() {
@@ -68,38 +68,11 @@ export function Hero() {
           </p>
         </div>
 
-        {/* Signature: the live-account readout. Three metrics, three drawn trend lines. */}
         <div
-          className="rise rounded-2xl border border-hairline bg-mineral/60 p-6 md:p-7"
+          className="rise"
           style={{ animationDelay: "0.5s" }}
         >
-          <div className="flex items-baseline justify-between border-b border-hairline pb-4">
-            <p className="eyebrow text-ash">Median client, first 6 months</p>
-            <span className="h-2 w-2 rounded-full bg-signal" aria-hidden="true" />
-          </div>
-
-          <dl className="divide-y divide-hairline">
-            {hero.ticker.map((row, i) => (
-              <div
-                key={row.label}
-                className="grid grid-cols-[1fr_auto] items-center gap-4 py-5"
-              >
-                <div>
-                  <dt className="text-sm text-ash">{row.label}</dt>
-                  <dd className="font-mono mt-1 text-2xl font-semibold tracking-tight text-ink">
-                    {row.value}
-                  </dd>
-                </div>
-                <div className="w-[110px]" style={{ animationDelay: `${0.6 + i * 0.12}s` }}>
-                  <Sparkline points={row.trend} height={38} />
-                </div>
-              </div>
-            ))}
-          </dl>
-
-          <p className="mt-2 text-xs leading-relaxed text-ash">
-            Figures are medians across active retainers, not best cases.
-          </p>
+          <DashboardMock />
         </div>
       </div>
     </section>
