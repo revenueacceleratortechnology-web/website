@@ -13,15 +13,24 @@ export function Testimonials() {
           {testimonials.map((t) => (
             <figure
               key={t.name}
-              className="flex flex-col rounded-2xl border border-hairline bg-mineral/50 p-7"
+              className="flex flex-col rounded-2xl border border-hairline bg-mineral/50 p-7 transition-colors duration-300 hover:border-ink/20"
             >
-              <span
-                aria-hidden="true"
-                className="display text-4xl leading-none text-signal"
-              >
-                &ldquo;
+              <span className="flex gap-0.5" aria-label="Rated 5 out of 5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <svg
+                    key={i}
+                    viewBox="0 0 20 19"
+                    className="h-3.5 w-3.5 text-signal"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M10 0l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L10 14.3 4.2 17.8l1.6-6.6L.6 6.8l6.8-.5z"
+                    />
+                  </svg>
+                ))}
               </span>
-              <blockquote className="mt-4 text-[1.0625rem] leading-relaxed text-ink">
+              <blockquote className="mb-8 mt-5 text-[1.0625rem] leading-relaxed text-ink">
                 {t.quote}
               </blockquote>
               <figcaption className="mt-auto flex items-center gap-3 border-t border-hairline pt-6">

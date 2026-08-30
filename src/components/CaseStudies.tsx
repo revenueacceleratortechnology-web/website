@@ -37,7 +37,7 @@ export function CaseStudies() {
                 <Sparkline points={c.trend} width={260} height={54} stroke="#FF5C2B" />
               </div>
 
-              <h3 className="mt-7 text-lg font-semibold leading-snug text-paper">
+              <h3 className="mb-7 mt-7 text-lg font-semibold leading-snug text-paper">
                 {c.headline}
               </h3>
 

@@ -17,9 +17,12 @@ export function Coverage() {
 
           <div className="mt-10">
             <p className="eyebrow mb-4 text-ash">Coverage in the press</p>
-            <ul className="flex flex-wrap gap-x-7 gap-y-3">
+            <ul className="flex flex-wrap gap-2">
               {press.map((p) => (
-                <li key={p} className="display text-sm text-ink/40">
+                <li
+                  key={p}
+                  className="rounded-lg border border-hairline bg-mineral/50 px-3 py-1.5 text-xs font-medium text-ink/60"
+                >
                   {p}
                 </li>
               ))}
@@ -40,8 +43,10 @@ export function Coverage() {
               {m}
             </li>
           ))}
-          {/* Fills the trailing grid cell so the hairline ground never shows through */}
-          <li aria-hidden="true" className="hidden bg-paper sm:block" />
+          <li className="flex items-center gap-2.5 bg-paper px-5 py-5 text-sm font-medium text-ash">
+            <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rounded-full bg-hairline" />
+            More on request
+          </li>
         </ul>
       </div>
     </section>

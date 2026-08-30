@@ -1,5 +1,5 @@
 type Props = {
-  /** Render for a dark background */
+  /** Render the wordmark for a dark background */
   invert?: boolean;
   /** Hide the wordmark, show the mark only */
   markOnly?: boolean;
@@ -7,12 +7,14 @@ type Props = {
 };
 
 /**
- * Mark: three bars whose gaps widen as they rise — acceleration, not linear growth.
- * The leading bar carries the signal color; the trailing bars recede.
+ * Mark: three ascending chevrons whose gaps widen as they climb — acceleration
+ * rather than steady growth. The leading chevron carries the signal color and
+ * the trailing two recede, so the silhouette still reads at favicon size.
+ *
+ * The mark keeps its own dark ground in both themes; `invert` only lightens the
+ * ground enough to separate it from the ink footer, and recolors the wordmark.
  */
 export function Logo({ invert = false, markOnly = false, className = "" }: Props) {
-  const base = invert ? "#E9EDE9" : "#0E1B1E";
-
   return (
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <svg
@@ -21,10 +23,30 @@ export function Logo({ invert = false, markOnly = false, className = "" }: Props
         aria-hidden="true"
         focusable="false"
       >
-        <rect width="48" height="48" rx="12" fill={invert ? "#162C31" : "#0E1B1E"} />
-        <rect x="10" y="26" width="6" height="11" rx="3" fill={base} opacity="0.4" />
-        <rect x="20" y="19" width="6" height="18" rx="3" fill={base} opacity="0.7" />
-        <rect x="32" y="10" width="6" height="27" rx="3" fill="#FF5C2B" />
+        <rect
+          width="48"
+          height="48"
+          rx="13"
+          fill={invert ? "#21424A" : "#0E1B1E"}
+        />
+        <g
+          fill="none"
+          stroke="#E9EDE9"
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M14 39L24 31l10 8" opacity="0.3" />
+          <path d="M14 30L24 22l10 8" opacity="0.62" />
+        </g>
+        <path
+          d="M14 19L24 11l10 8"
+          fill="none"
+          stroke="#FF5C2B"
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
 
       {!markOnly && (
@@ -38,7 +60,7 @@ export function Logo({ invert = false, markOnly = false, className = "" }: Props
           </span>
           <span
             className={`eyebrow mt-1 text-[0.5rem] ${
-              invert ? "text-ash" : "text-ash"
+              invert ? "text-paper/50" : "text-ash"
             }`}
           >
             Technology

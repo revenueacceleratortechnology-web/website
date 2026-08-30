@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { faqs } from "@/lib/content";
+import { faqs, site } from "@/lib/content";
 
 export function Faq() {
   const [open, setOpen] = useState<number | null>(null);
@@ -18,6 +18,20 @@ export function Faq() {
             If yours is not here, ask it on the call — we answer pricing and
             staffing questions directly.
           </p>
+
+          <div className="mt-8 rounded-2xl border border-hairline bg-mineral/50 p-6">
+            <p className="text-sm font-semibold text-ink">Still deciding?</p>
+            <p className="mt-2 text-sm leading-relaxed text-ash">
+              Talk to a strategist for fifteen minutes. No pitch deck, no
+              obligation.
+            </p>
+            <a
+              href={`tel:${site.phone.replace(/[^\d+]/g, "")}`}
+              className="mt-4 inline-flex items-center gap-2 font-mono text-sm font-semibold text-ink transition-colors hover:text-signal"
+            >
+              {site.phone}
+            </a>
+          </div>
         </div>
 
         <ul className="divide-y divide-hairline border-y border-hairline">
