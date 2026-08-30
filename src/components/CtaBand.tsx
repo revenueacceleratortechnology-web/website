@@ -1,26 +1,37 @@
 import { AuditForm } from "./AuditForm";
-import { site } from "@/lib/content";
+import { site, finalCta } from "@/lib/content";
 
-export function CtaBand() {
+type Props = {
+  eyebrow?: string;
+  heading?: string;
+  body?: string;
+  bullets?: string[];
+};
+
+export function CtaBand({
+  eyebrow = "Next step",
+  heading = finalCta.heading,
+  body = finalCta.body,
+  bullets = [
+    "Seven-day free trial on eligible recurring services",
+    "An initial account audit at no cost",
+    "Clear ownership of every priority from day one",
+  ],
+}: Props = {}) {
   return (
     <section id="audit" className="scroll-mt-24 bg-signal">
       <div className="shell grid gap-10 py-16 md:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
         <div>
-          <p className="eyebrow text-white/70">Free account audit</p>
+          <p className="eyebrow text-white/70">{eyebrow}</p>
           <h2 className="display mt-4 text-[length:var(--text-h2)] text-white">
-            Book 30 minutes. Leave with three things to fix.
+            {heading}
           </h2>
           <p className="mt-5 max-w-xl leading-relaxed text-white/85">
-            We open your account with you, name the largest revenue leak, and put
-            it in writing. You keep the findings whether or not you hire us.
+            {body}
           </p>
 
           <ul className="mt-7 space-y-2.5">
-            {[
-              "A written diagnosis of your three worst-performing listings",
-              "A rebuild plan with the first change we would make",
-              "No obligation, and no percentage of your ad spend, ever",
-            ].map((line) => (
+            {bullets.map((line) => (
               <li key={line} className="flex gap-3 text-sm text-white/90">
                 <svg
                   viewBox="0 0 20 20"

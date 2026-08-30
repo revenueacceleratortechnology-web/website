@@ -3,10 +3,9 @@ import { Hero } from "@/components/Hero";
 import { PromoStrip } from "@/components/PromoStrip";
 import { LogoRail } from "@/components/LogoRail";
 import { Pillars } from "@/components/Pillars";
+import { WhyUs } from "@/components/WhyUs";
 import { CaseStudies } from "@/components/CaseStudies";
-import { Stats } from "@/components/Stats";
 import { Testimonials } from "@/components/Testimonials";
-import { Coverage } from "@/components/Coverage";
 import { Process } from "@/components/Process";
 import { Faq } from "@/components/Faq";
 import { CtaBand } from "@/components/CtaBand";
@@ -30,10 +29,9 @@ export default function Home() {
         <PromoStrip />
         <LogoRail />
         <Pillars />
+        <WhyUs />
         <CaseStudies />
-        <Stats />
         <Testimonials />
-        <Coverage />
         <Process />
         <Faq />
         <CtaBand />

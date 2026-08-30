@@ -10,8 +10,8 @@ export function Footer() {
           <div>
             <Logo invert />
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-paper/60">
-              {site.tagline} Marketplace and direct-to-consumer growth for brands
-              doing $1M and up.
+              {site.tagline} We connect strategic direction with execution and
+              treat the account as one commercial system.
             </p>
 
             <address className="mt-7 space-y-1.5 text-sm not-italic text-paper/60">
@@ -58,7 +58,7 @@ export function Footer() {
 
         <div className="mt-16 flex flex-wrap items-center justify-between gap-6 border-t border-hairline-dark pt-8">
           <p className="text-xs text-paper/45">
-            © {new Date().getFullYear()} {site.name}. All rights reserved.
+            © {new Date().getFullYear()} {site.legal}. All rights reserved.
           </p>
 
           <ul className="flex flex-wrap gap-6">

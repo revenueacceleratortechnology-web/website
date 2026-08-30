@@ -56,14 +56,14 @@ export function Logo({ invert = false, markOnly = false, className = "" }: Props
               invert ? "text-paper" : "text-ink"
             }`}
           >
-            Revenue Accelerator
+            RA Tech
           </span>
           <span
             className={`eyebrow mt-1 text-[0.5rem] ${
               invert ? "text-paper/50" : "text-ash"
             }`}
           >
-            Technology
+            Amazon agency
           </span>
         </span>
       )}

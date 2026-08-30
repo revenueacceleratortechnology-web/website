@@ -27,6 +27,12 @@ const ICONS = {
       <path d="M9 21h6M12 17v4" strokeLinecap="round" />
     </>
   ),
+  account: (
+    <>
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4.5 20a7.5 7.5 0 0115 0" strokeLinecap="round" />
+    </>
+  ),
 };
 
 export function Pillars() {
