@@ -24,30 +24,30 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://revenueaccelerator.tech"),
   title: {
-    default: "Revenue Accelerator Technology — Marketplace growth for scaling brands",
-    template: "%s — Revenue Accelerator Technology",
+    default: "RA Tech — A full-service Amazon agency for growing brands",
+    template: "%s — RA Tech",
   },
   description:
-    "We run Amazon, Walmart, and Shopify growth for brands doing $1M and up — advertising, listings, creative, and catalog operations under one account team.",
+    "RA Tech is a full-service Amazon agency for growing brands, connecting PPC, SEO, creative, platform management, and account management in one working relationship.",
   keywords: [
     "Amazon agency",
-    "marketplace growth",
     "Amazon PPC",
-    "listing optimization",
-    "Walmart Connect",
-    "ecommerce agency",
+    "Amazon SEO",
+    "Amazon account management",
+    "Seller Central",
+    "Amazon management agency",
   ],
   openGraph: {
-    title: "Revenue Accelerator Technology",
+    title: "RA Tech",
     description:
-      "Marketplace growth, engineered to compound. Advertising, listings, creative, and catalog operations under one account team.",
+      "A full-service Amazon agency for growing brands. PPC, SEO, creative, platform, and account management in one working relationship.",
     type: "website",
-    siteName: "Revenue Accelerator Technology",
+    siteName: "RA Tech",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Revenue Accelerator Technology",
-    description: "Marketplace growth, engineered to compound.",
+    title: "RA Tech",
+    description: "A full-service Amazon agency for growing brands.",
   },
 };
 

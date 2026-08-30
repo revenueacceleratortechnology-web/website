@@ -3,7 +3,17 @@
 import { useState } from "react";
 import { faqs, site } from "@/lib/content";
 
-export function Faq() {
+type Props = {
+  heading?: string;
+  intro?: string;
+  items?: { q: string; a: string }[];
+};
+
+export function Faq({
+  heading = "The things brands ask on the first call.",
+  intro = "If yours is not here, ask it on the call — we answer pricing and staffing questions directly.",
+  items = faqs,
+}: Props = {}) {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
@@ -12,12 +22,9 @@ export function Faq() {
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="eyebrow text-signal">Questions</p>
           <h2 className="display mt-4 text-[length:var(--text-h2)]">
-            The things brands ask on the first call.
+            {heading}
           </h2>
-          <p className="mt-5 leading-relaxed text-ash">
-            If yours is not here, ask it on the call — we answer pricing and
-            staffing questions directly.
-          </p>
+          <p className="mt-5 leading-relaxed text-ash">{intro}</p>
 
           <div className="mt-8 rounded-2xl border border-hairline bg-mineral/50 p-6">
             <p className="text-sm font-semibold text-ink">Still deciding?</p>
@@ -35,7 +42,7 @@ export function Faq() {
         </div>
 
         <ul className="divide-y divide-hairline border-y border-hairline">
-          {faqs.map((f, i) => {
+          {items.map((f, i) => {
             const isOpen = open === i;
             return (
               <li key={f.q}>
