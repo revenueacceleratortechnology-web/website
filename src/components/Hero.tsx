@@ -48,7 +48,7 @@ export function Hero() {
             <Button href={hero.primary.href} arrow>
               {hero.primary.label}
             </Button>
-            <Button href={hero.secondary.href} variant="ghost" arrow>
+            <Button href={hero.secondary.href} variant="ink" arrow>
               {hero.secondary.label}
             </Button>
           </div>

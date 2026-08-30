@@ -7,10 +7,47 @@ export const site = {
   address: "1100 Commerce Way, Suite 400, Austin, TX 78701",
 };
 
+export type NavItem = {
+  label: string;
+  href: string;
+  /** Small superscript flag, e.g. "New" */
+  badge?: string;
+  /** Arrow bullet and heavier weight — a primary destination in the column */
+  featured?: boolean;
+};
+
+export type NavCard = {
+  title: string;
+  body: string;
+  href: string;
+  /** Picks the fallback artwork palette when no photo is set */
+  tone: "warm" | "cool";
+  /** Chooses the drawn fallback illustration */
+  motif?: "supplements" | "beauty" | "growth" | "email";
+  /**
+   * Drop a licensed photo in /public/menu and point at it here, e.g.
+   * { src: "/menu/supplements.jpg", alt: "..." }. Without it the card
+   * falls back to the generated gradient panel.
+   */
+  image?: { src: string; alt: string };
+};
+
+export type NavColumn = {
+  /** Quiet eyebrow label */
+  heading?: string;
+  /** Arrow-marked link acting as the column head */
+  lead?: { label: string; href: string };
+  links: NavItem[];
+  /** Divider plus one closing link */
+  tail?: { label: string; href: string };
+  /** Promo card rendered instead of a link list */
+  card?: NavCard;
+};
+
 export type NavGroup = {
   label: string;
   href: string;
-  columns?: { heading: string; links: { label: string; href: string }[] }[];
+  columns?: NavColumn[];
 };
 
 export const nav: NavGroup[] = [
@@ -19,120 +56,244 @@ export const nav: NavGroup[] = [
     href: "#services",
     columns: [
       {
-        heading: "Marketplace",
         links: [
-          { label: "Full account management", href: "#services" },
-          { label: "Advertising & PPC", href: "#services" },
-          { label: "Search & listing optimization", href: "#services" },
-          { label: "Creative & A+ content", href: "#services" },
+          { label: "Full account management", href: "#services", featured: true },
+          { label: "Advertising & PPC management", href: "#services", featured: true },
+          { label: "Marketplace SEO", href: "#services", featured: true },
+          { label: "Account audit", href: "#audit", featured: true },
+          { label: "Playbooks & SOPs", href: "#resources", featured: true },
+          { label: "All services", href: "#services", featured: true },
+          { label: "Consulting", href: "#services", featured: true },
+          { label: "Book a strategy call", href: "#audit", featured: true },
         ],
       },
       {
-        heading: "Operations",
+        lead: { label: "Design", href: "#services" },
         links: [
-          { label: "Catalog troubleshooting", href: "#services" },
-          { label: "Inventory & forecasting", href: "#services" },
-          { label: "Brand protection", href: "#services" },
-          { label: "Reimbursement recovery", href: "#services" },
+          { label: "Brand guidelines", href: "#services" },
+          { label: "Brand story", href: "#services" },
+          { label: "Brand storefront", href: "#services" },
+          { label: "Listing images", href: "#services" },
+          { label: "A+ and Premium A+ content", href: "#services" },
+          { label: "Main image testing", href: "#services" },
+          { label: "Listing optimization", href: "#services" },
+          { label: "Full catalog optimization", href: "#services" },
         ],
+      },
+      {
+        lead: { label: "Troubleshooting", href: "#services" },
+        links: [
+          { label: "Listing reinstatement", href: "#services" },
+          { label: "Account suspension appeals", href: "#services" },
+          { label: "Advertising audit", href: "#audit" },
+          { label: "Brand name change", href: "#services" },
+          { label: "Troubleshooting hours", href: "#services" },
+          { label: "UPC to GS1 migration", href: "#services" },
+          { label: "Remote fulfilment setup", href: "#services" },
+        ],
+      },
+      {
+        lead: { label: "Other services", href: "#services" },
+        links: [
+          { label: "Amazon DSP", href: "#services" },
+          { label: "Trademark registration", href: "#services" },
+          { label: "Vendor Central management", href: "#services" },
+          { label: "Walmart full service", href: "#services", badge: "New" },
+          { label: "Walmart account audit", href: "#audit", badge: "New" },
+          { label: "Walmart advertising audit", href: "#audit", badge: "New" },
+        ],
+        tail: { label: "Free marketplace resources", href: "#resources" },
       },
     ],
   },
   {
-    label: "Categories",
+    label: "Category Expertise",
     href: "#categories",
     columns: [
       {
-        heading: "Consumables",
         links: [
-          { label: "Supplements", href: "#categories" },
-          { label: "Grocery & beverage", href: "#categories" },
-          { label: "Beauty & personal care", href: "#categories" },
-          { label: "Pet", href: "#categories" },
+          { label: "Beauty products", href: "#categories", featured: true },
+          { label: "Consumables", href: "#categories", featured: true },
+          { label: "Consumer packaged goods", href: "#categories", featured: true },
+          { label: "Hard line goods", href: "#categories", featured: true },
+          { label: "Home and kitchen", href: "#categories", featured: true },
+          { label: "Soft line goods", href: "#categories", featured: true },
+          { label: "Supplements", href: "#categories", featured: true },
         ],
       },
       {
-        heading: "Durables",
-        links: [
-          { label: "Home & kitchen", href: "#categories" },
-          { label: "Electronics", href: "#categories" },
-          { label: "Apparel", href: "#categories" },
-          { label: "Toys & games", href: "#categories" },
-        ],
+        links: [],
+        card: {
+          title: "Grow your supplement brand",
+          body: "Ranking, compliance, and subscription strategy for a category where review velocity decides the winner.",
+          href: "#categories",
+          tone: "cool",
+          motif: "supplements",
+        },
+      },
+      {
+        links: [],
+        card: {
+          title: "Sell more beauty on marketplaces",
+          body: "Win shelf space in crowded beauty niches with creative testing and a deliberate variation strategy.",
+          href: "#categories",
+          tone: "warm",
+          motif: "beauty",
+        },
       },
     ],
   },
   {
-    label: "Direct-to-consumer",
+    label: "DTC",
     href: "#dtc",
     columns: [
       {
-        heading: "Channels",
         links: [
-          { label: "Shopify growth", href: "#dtc" },
-          { label: "Email & SMS", href: "#dtc" },
-          { label: "Paid social", href: "#dtc" },
-          { label: "Site SEO", href: "#dtc" },
+          { label: "DTC services", href: "#dtc", featured: true },
+          { label: "Ecommerce audit", href: "#audit", featured: true },
+          { label: "SEO for websites", href: "#dtc", featured: true },
+          { label: "Email marketing", href: "#dtc", featured: true },
+          { label: "Backlink building", href: "#dtc", featured: true },
+          { label: "Google Ads management", href: "#dtc", featured: true },
+          { label: "Meta Ads management", href: "#dtc", featured: true },
         ],
+      },
+      {
+        links: [],
+        card: {
+          title: "Build growth beyond marketplaces",
+          body: "Reach high-intent shoppers on your own storefront, where you keep the customer relationship and the margin.",
+          href: "#dtc",
+          tone: "cool",
+          motif: "growth",
+        },
+      },
+      {
+        links: [],
+        card: {
+          title: "Turn emails into revenue",
+          body: "Lifecycle flows that bring buyers back without paying for the same click a second time.",
+          href: "#dtc",
+          tone: "warm",
+          motif: "email",
+        },
       },
     ],
   },
-  { label: "Results", href: "#results" },
+  { label: "Digital Products", href: "#resources" },
   {
-    label: "Resources",
-    href: "#resources",
+    label: "Results",
+    href: "#results",
     columns: [
       {
-        heading: "Learn",
         links: [
-          { label: "Articles", href: "#resources" },
-          { label: "Webinars", href: "#resources" },
-          { label: "Playbooks", href: "#resources" },
-          { label: "Press", href: "#resources" },
+          { label: "Case studies", href: "#results", featured: true },
+          { label: "Testimonials", href: "#results", featured: true },
         ],
       },
     ],
   },
   {
-    label: "Company",
+    label: "About Us",
     href: "#company",
     columns: [
       {
-        heading: "About",
         links: [
-          { label: "Our team", href: "#company" },
-          { label: "Careers", href: "#company" },
-          { label: "Partnerships", href: "#company" },
-          { label: "Contact", href: "#contact" },
+          { label: "Our journey", href: "#company", featured: true },
+          { label: "Leadership", href: "#company", featured: true },
         ],
       },
     ],
   },
+  { label: "Coaching", href: "#services" },
 ];
 
-export const utilityNav = [
+export type UtilityLink = {
+  label: string;
+  href: string;
+  /** Second-level flyout */
+  links?: { label: string; href: string }[];
+};
+
+export type UtilityItem = {
+  label: string;
+  href: string;
+  /** Simple divided list shown on hover */
+  links?: UtilityLink[];
+};
+
+export const utilityNav: UtilityItem[] = [
   { label: "Events", href: "#resources" },
-  { label: "Resources", href: "#resources" },
-  { label: "Careers", href: "#company" },
+  {
+    label: "Resources",
+    href: "#resources",
+    links: [
+      { label: "News", href: "#resources" },
+      { label: "Articles", href: "#resources" },
+      { label: "Webinar library", href: "#resources" },
+      { label: "Partnerships", href: "#company" },
+      { label: "Press", href: "#resources" },
+    ],
+  },
+  {
+    label: "Careers",
+    href: "#company",
+    links: [
+      { label: "Apply here — we're hiring", href: "#company" },
+      { label: "Employee reviews", href: "#company" },
+      { label: "Internships (paid)", href: "#company" },
+      { label: "Brand director", href: "#company" },
+      { label: "Brand manager", href: "#company" },
+      { label: "DTC jobs", href: "#company" },
+      {
+        label: "IT jobs",
+        href: "#company",
+        links: [
+          { label: "IT specialist", href: "#company" },
+          { label: "Automation specialist", href: "#company" },
+        ],
+      },
+      { label: "Design", href: "#company" },
+      { label: "Marketing", href: "#company" },
+      { label: "PPC", href: "#company" },
+      {
+        label: "Sales",
+        href: "#company",
+        links: [
+          { label: "Account executive", href: "#company" },
+          { label: "Business development rep", href: "#company" },
+          { label: "Outreach specialist", href: "#company" },
+        ],
+      },
+      { label: "Social media specialist", href: "#company" },
+      { label: "Remote roles", href: "#company" },
+      { label: "International roles", href: "#company" },
+    ],
+  },
   { label: "Contact us", href: "#audit" },
 ];
 
 export const promo = {
-  headline: "Get a free listing teardown with any audit booked this month.",
-  body: "We record a 15-minute walkthrough of your three worst-performing listings.",
-  cta: { label: "Book a call", href: "#audit" },
+  kicker: "Peak season",
+  headline: "Q4 readiness workshop",
+  body: "Forecast demand, protect your inventory position, and keep best sellers in stock through the busiest ten weeks of the year.",
+  cta: { label: "Save your seat", href: "#audit" },
 };
 
 export const hero = {
   eyebrow: "Amazon · Walmart · Shopify",
-  headline: ["Your marketplace revenue,", "engineered to compound."],
-  body: "We run advertising, listings, creative, and catalog operations for brands that have outgrown doing it in-house. One team, one plan, one number to move.",
-  primary: { label: "Get a free account audit", href: "#audit" },
-  secondary: { label: "See client results", href: "#results" },
-  tertiary: { lead: "Not sure where to start?", label: "Get a free listing audit", href: "#audit" },
+  headline: ["Your products are good.", "The way they are sold", "is costing you."],
+  body: "Thin listings, untuned ad spend, and catalog defects quietly cap what a good catalog earns. We fix all three with one team, and show you the number moving.",
+  primary: { label: "Grow my marketplace sales", href: "#audit" },
+  secondary: { label: "Fix an account problem", href: "#audit" },
+  tertiary: {
+    lead: "Not sure where to start?",
+    label: "Start with a free listing audit",
+    href: "#audit",
+  },
   ticker: [
     { label: "Ad-attributed sales", value: "+64%", trend: [8, 11, 10, 15, 19, 24, 31, 38] },
-    { label: "Blended TACoS", value: "−7.2pt", trend: [38, 34, 33, 28, 24, 21, 17, 14] },
+    { label: "Blended TACoS", value: "-7.2pt", trend: [38, 34, 33, 28, 24, 21, 17, 14] },
     { label: "Organic rank, head terms", value: "+18", trend: [4, 6, 9, 8, 13, 17, 22, 28] },
   ],
 };
@@ -143,34 +304,45 @@ export const clients = [
   "Cobalt", "Wildroot", "Juniper Lane", "Ironwood", "Marlowe", "Copperfield",
 ];
 
+export const approach = {
+  heading: "How we grow your brand on marketplaces",
+  body: [
+    "We work every lever that moves revenue — the traffic reaching your listings, the rate at which they convert, and the catalog sitting underneath both.",
+    "Building ad campaigns, rewriting listings, testing imagery, and clearing the catalog defects nobody else looks at, we strengthen both the brand and what it earns.",
+  ],
+  cta: { label: "Explore all services", href: "#services" },
+  footnote:
+    "As a full-service marketplace agency we manage every pillar — including the unglamorous ones most agencies quietly skip.",
+};
+
 export const pillars = [
   {
-    code: "01",
+    icon: "click" as const,
     title: "Advertising",
+    body: "Traffic starts with disciplined ad management. Higher revenue, lower ACoS, and reporting you can audit line by line.",
+    link: "More about advertising",
     href: "#services",
-    body: "Sponsored Products, Brands, Display, and DSP managed against profit — not impressions. Weekly bid governance and search-term hygiene.",
-    points: ["Campaign architecture rebuilds", "Dayparting & placement control", "DSP retargeting", "Profit-weighted bidding"],
   },
   {
-    code: "02",
-    title: "Search & listings",
+    icon: "search" as const,
+    title: "Search & SEO",
+    body: "A four-phase indexation and keyword plan built from live search data, aimed at head-term rank inside a quarter.",
+    link: "How our SEO works",
     href: "#services",
-    body: "Indexation, keyword coverage, and conversion copy built from live search data — so paid traffic stops subsidizing weak pages.",
-    points: ["Keyword & indexation audits", "Title, bullet, backend copy", "Variation strategy", "Review velocity"],
   },
   {
-    code: "03",
-    title: "Creative",
+    icon: "design" as const,
+    title: "Design",
+    body: "Stand apart with A+ content, Brand Stores, and listing imagery tested against conversion rate rather than taste.",
+    link: "Design that converts",
     href: "#services",
-    body: "Main images, infographics, A+ modules, Brand Store, and video produced in-house and tested against conversion rate.",
-    points: ["Image stack testing", "A+ / Premium A+ modules", "Brand Store builds", "Short-form video"],
   },
   {
-    code: "04",
-    title: "Operations",
+    icon: "screen" as const,
+    title: "Platform management",
+    body: "Competition never pauses, so neither does the work. We hold the gains we make and keep compounding them.",
+    link: "Platform management",
     href: "#services",
-    body: "The unglamorous work that protects revenue: suppressed listings, stranded inventory, case escalation, and reimbursements.",
-    points: ["Catalog & flat-file fixes", "Case management", "Inventory forecasting", "Reimbursement recovery"],
   },
 ];
 
