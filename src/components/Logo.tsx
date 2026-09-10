@@ -1,72 +1,7 @@
-type Props = {
-  /** Render the wordmark for a dark background */
-  invert?: boolean;
-  /** Hide the wordmark, show the mark only */
-  markOnly?: boolean;
-  className?: string;
-};
-
-/**
- * Mark: three ascending chevrons whose gaps widen as they climb — acceleration
- * rather than steady growth. The leading chevron carries the signal color and
- * the trailing two recede, so the silhouette still reads at favicon size.
- *
- * The mark keeps its own dark ground in both themes; `invert` only lightens the
- * ground enough to separate it from the ink footer, and recolors the wordmark.
- */
-export function Logo({ invert = false, markOnly = false, className = "" }: Props) {
-  return (
-    <span className={`inline-flex items-center gap-2.5 ${className}`}>
-      <svg
-        viewBox="0 0 48 48"
-        className="h-9 w-9 shrink-0"
-        aria-hidden="true"
-        focusable="false"
-      >
-        <rect
-          width="48"
-          height="48"
-          rx="13"
-          fill={invert ? "#21424A" : "#0E1B1E"}
-        />
-        <g
-          fill="none"
-          stroke="#E9EDE9"
-          strokeWidth="5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M14 39L24 31l10 8" opacity="0.3" />
-          <path d="M14 30L24 22l10 8" opacity="0.62" />
-        </g>
-        <path
-          d="M14 19L24 11l10 8"
-          fill="none"
-          stroke="#FF5C2B"
-          strokeWidth="5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-
-      {!markOnly && (
-        <span className="flex flex-col leading-none">
-          <span
-            className={`display text-[0.98rem] tracking-[-0.02em] ${
-              invert ? "text-paper" : "text-ink"
-            }`}
-          >
-            RA Tech
-          </span>
-          <span
-            className={`eyebrow mt-1 text-[0.5rem] ${
-              invert ? "text-paper/50" : "text-ash"
-            }`}
-          >
-            Amazon agency
-          </span>
-        </span>
-      )}
-    </span>
-  );
+type Props = { invert?: boolean; markOnly?: boolean; className?: string };
+export function Logo({ invert=false,markOnly=false,className='' }:Props){
+ return <span className={`inline-flex items-center gap-3 ${className}`}>
+  <svg viewBox="0 0 56 56" className="h-11 w-11 shrink-0" role="img" aria-label="RA Tech"><rect width="56" height="56" rx="12" fill="#F5793B"/><path d="M13 40V16h12c11 0 11 14 0 14H13m12 0 10 10M28 40l12-24 7 24M34 31h10" fill="none" stroke="#fff" strokeWidth="4" strokeLinejoin="round"/></svg>
+  {!markOnly&&<span className="flex flex-col"><span className={`text-[1.65rem] font-extrabold leading-none tracking-[-.07em] ${invert?'text-white':'text-ink'}`}>RA<span className="font-medium tracking-[-.05em]">Tech</span><span className="text-signal">.</span></span><span className={`mt-1.5 text-[.48rem] font-semibold uppercase tracking-[.14em] ${invert?'text-white/65':'text-ash'}`}>Revenue Accelerator Technology</span></span>}
+ </span>;
 }

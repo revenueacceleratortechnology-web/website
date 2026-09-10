@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Manrope, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-bricolage",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
   display: "swap",
 });
@@ -55,7 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${inter.variable} ${plexMono.variable} h-full`}
+      className={`${manrope.variable} ${inter.variable} ${plexMono.variable} h-full`}
     >
       <body className="flex min-h-full flex-col">{children}</body>
     </html>

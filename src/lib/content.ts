@@ -1,10 +1,11 @@
+import { pages, destination } from "./pages";
 export const site = {
   name: "RA Tech",
   legal: "Revenue Accelerator Technology",
   tagline: "A full-service Amazon agency for growing brands.",
-  phone: "+1 (555) 014-2200",
-  email: "hello@ratech.agency",
-  address: "1100 Commerce Way, Suite 400, Austin, TX 78701",
+  phone: "8508504042",
+  email: "",
+  address: "",
 };
 
 export type NavItem = {
@@ -519,3 +520,34 @@ export const footer = [
 ];
 
 export const socials = ["LinkedIn", "YouTube", "Instagram", "X", "Podcast"];
+
+// Every menu item resolves to a real page; anchors are reserved for page sections.
+for (const group of nav) {
+ group.href=destination(group.label,group.href.startsWith('/')?group.href:'/resources');
+ for (const col of group.columns??[]) {
+  if(col.lead) col.lead.href=destination(col.lead.label);
+  if(col.tail) col.tail.href=destination(col.tail.label);
+  if(col.card) col.card.href=destination(col.card.title);
+  for(const link of col.links) link.href=destination(link.label);
+ }
+}
+for(const item of utilityNav){
+ item.href=destination(item.label);
+ for(const link of item.links??[]){link.href=destination(link.label,item.label==='Careers'?'/careers':'/resources');for(const child of link.links??[])child.href='/careers';}
+}
+for(const pillar of pillars) pillar.href=destination(pillar.title);
+approach.cta.href='/services';
+hero.secondary.href='/services';
+hero.secondary.label='Explore our services';
+
+const homeCopy=pages[''];
+hero.body=homeCopy.intro[0];
+const homeApproach=homeCopy.sections.find(s=>s.title.startsWith('How RA Tech Helps'));
+if(homeApproach){approach.body=homeApproach.body;for(let i=0;i<pillars.length;i++){if(homeApproach.cards[i])pillars[i].body=homeApproach.cards[i].body.join(' ');}}
+const homeWhy=homeCopy.sections.find(s=>s.title.startsWith('Why Brands'));
+if(homeWhy){whyUs.intro=homeWhy.body.join(' ');for(let i=0;i<whyUs.items.length;i++){if(homeWhy.cards[i])whyUs.items[i].body=homeWhy.cards[i].body.join(' ');}}
+const homeProcess=homeCopy.sections.find(s=>s.title.startsWith('How RA Tech Works'));
+if(homeProcess){processIntro.intro=homeProcess.body.join(' ');for(let i=0;i<process.length;i++){if(homeProcess.cards[i])process[i].body=homeProcess.cards[i].body.join(' ');}}
+const homeClosing=homeCopy.sections.find(s=>s.title.startsWith('Bring Your'));
+if(homeClosing) finalCta.body=homeClosing.body.join(' ');
+faqs.splice(0,faqs.length,...homeCopy.faqs);

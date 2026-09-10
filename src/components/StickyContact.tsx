@@ -21,7 +21,7 @@ export function StickyContact() {
   return (
     <>
       <Link
-        href="#audit"
+        href="/contact"
         className={`fixed bottom-6 right-6 z-40 hidden items-center gap-2.5 rounded-full bg-ink px-5 py-3.5 text-sm font-semibold text-paper shadow-[0_16px_40px_-12px_rgba(14,27,30,0.5)] transition-all duration-300 hover:bg-slate lg:inline-flex ${
           past ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
         }`}
@@ -45,7 +45,7 @@ export function StickyContact() {
           Call
         </a>
         <Link
-          href="#audit"
+          href="/contact"
           className="flex-[2] rounded-full bg-signal py-3 text-center text-sm font-semibold text-white"
         >
           Get a free audit

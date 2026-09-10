@@ -1,23 +1,11 @@
 import Link from "next/link";
 import { Button } from "./Button";
-import { DashboardMock } from "./DashboardMock";
+import { GrowthIllustration } from "./GrowthIllustration";
 import { hero } from "@/lib/content";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-hairline bg-paper">
-      {/* Ruled ground: a faint measurement grid, the only ornament on this band */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-[0.5]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, var(--color-hairline) 1px, transparent 1px)",
-          backgroundSize: "clamp(60px, 8vw, 110px) 100%",
-          maskImage: "linear-gradient(to bottom, transparent, black 30%, black 60%, transparent)",
-        }}
-      />
-
       <div className="shell relative grid gap-10 py-12 md:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-14 lg:py-16">
         <div>
           <p className="eyebrow rise text-signal">{hero.eyebrow}</p>
@@ -64,7 +52,7 @@ export function Hero() {
             >
               {hero.tertiary.label}
             </Link>
-            . No ad-spend percentage, no annual lock-in.
+            .
           </p>
         </div>
 
@@ -72,7 +60,7 @@ export function Hero() {
           className="rise"
           style={{ animationDelay: "0.5s" }}
         >
-          <DashboardMock />
+          <GrowthIllustration />
         </div>
       </div>
     </section>

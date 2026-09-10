@@ -308,6 +308,9 @@ export function Header() {
 
   return (
     <header
+      onKeyDown={(e) => { if(e.key === "Escape"){setOpen(false);setPanel(null);setUtil(null);} }}
+      onClick={(e) => { if((e.target as HTMLElement).closest("a")){setOpen(false);setPanel(null);setUtil(null);} }}
+      onBlur={(e) => { if(!e.currentTarget.contains(e.relatedTarget as Node)){setPanel(null);setUtil(null);} }}
       className="sticky top-0 z-50 bg-paper"
       onMouseLeave={() => {
         setPanel(null);
@@ -415,7 +418,7 @@ export function Header() {
                 )}
               </div>
             ))}
-            <Button href="#audit" className="px-5 py-2 text-xs">
+            <Button href="/contact" className="px-5 py-2 text-xs">
               Fast quote
             </Button>
           </div>
@@ -492,7 +495,7 @@ export function Header() {
           ))}
 
           <Link
-            href="#audit"
+            href="/contact"
             className="rounded-full px-3.5 py-2 text-[0.9375rem] font-semibold text-signal transition-colors hover:text-ink"
           >
             Free Audit
@@ -576,7 +579,7 @@ export function Header() {
             ))}
           </div>
 
-          <Button href="#audit" className="mt-8 w-full">
+          <Button href="/contact" className="mt-8 w-full">
             Get a free account audit
           </Button>
           <a

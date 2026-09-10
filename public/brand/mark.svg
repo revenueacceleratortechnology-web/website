@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Revenue Accelerator Technology">
-  <rect width="48" height="48" rx="13" fill="#0E1B1E"/>
-  <g fill="none" stroke="#E9EDE9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M14 39L24 31l10 8" opacity="0.3"/>
-    <path d="M14 30L24 22l10 8" opacity="0.62"/>
-  </g>
-  <path d="M14 19L24 11l10 8" fill="none" stroke="#FF5C2B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56"><rect width="56" height="56" rx="12" fill="#F5793B"/><path d="M13 40V16h12c11 0 11 14 0 14H13m12 0 10 10M28 40l12-24 7 24M34 31h10" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"/></svg>
