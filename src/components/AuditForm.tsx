@@ -7,6 +7,7 @@ type Errors = Partial<Record<"name" | "email" | "company", string>>;
 
 export function AuditForm() {
   const [sent, setSent] = useState(false);
+  const [enquiry, setEnquiry] = useState("");
   const [errors, setErrors] = useState<Errors>({});
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -24,7 +25,10 @@ export function AuditForm() {
       next.email = "That email address is missing an @ or a domain.";
 
     setErrors(next);
-    if (Object.keys(next).length === 0) setSent(true);
+    if (Object.keys(next).length === 0) {
+      setEnquiry(`Hello RA Tech, I would like an Amazon account audit.\nName: ${name}\nBrand: ${company}\nEmail: ${email}\nMonthly revenue: ${String(data.get("revenue") ?? "")}`);
+      setSent(true);
+    }
   }
 
   if (sent) {
@@ -45,17 +49,18 @@ export function AuditForm() {
             />
           </svg>
         </span>
-        <p className="display mt-5 text-xl text-ink">Request received</p>
+        <p className="display mt-5 text-xl text-ink">Your enquiry is ready</p>
         <p className="mt-2 text-sm leading-relaxed text-ash">
-          A strategist will reply within one business day to book the call. If it
-          is urgent, call {site.phone}.
+          Copy your enquiry and share it with the team using your preferred messaging app, or call {site.phone}. Your details have not been sent.
         </p>
+        <textarea aria-label="Prepared enquiry" readOnly value={enquiry} className="mt-5 h-40 w-full rounded-lg border border-hairline p-3 text-left text-sm text-ink" />
+        <a href={`tel:${site.phone}`} className="mt-4 block font-semibold text-signal">Call {site.phone}</a>
         <button
           type="button"
           onClick={() => setSent(false)}
           className="mt-5 text-sm font-semibold text-signal underline underline-offset-4"
         >
-          Send another request
+          Edit enquiry
         </button>
       </div>
     );
@@ -69,7 +74,7 @@ export function AuditForm() {
     >
       <p className="display text-lg text-ink">Request your audit</p>
       <p className="mt-1.5 text-sm text-ash">
-        Four fields. No call required to get the findings.
+        Prepare your details for a conversation with our team.
       </p>
 
       <div className="mt-5 space-y-4">
@@ -119,11 +124,11 @@ export function AuditForm() {
         type="submit"
         className="mt-6 w-full rounded-full bg-ink px-6 py-3.5 text-sm font-semibold text-paper transition-colors hover:bg-slate"
       >
-        Send the request
+        Prepare my enquiry
       </button>
 
       <p className="mt-3 text-center text-xs text-ash">
-        We reply within one business day. We never share your details.
+        This prepares your enquiry on your device. It does not send or save your details.
       </p>
     </form>
   );

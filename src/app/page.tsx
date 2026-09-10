@@ -1,11 +1,10 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { PromoStrip } from "@/components/PromoStrip";
+import { CategoryDirectory } from "@/components/CategoryDirectory";
 import { LogoRail } from "@/components/LogoRail";
 import { Pillars } from "@/components/Pillars";
 import { WhyUs } from "@/components/WhyUs";
-import { CaseStudies } from "@/components/CaseStudies";
-import { Testimonials } from "@/components/Testimonials";
 import { Process } from "@/components/Process";
 import { Faq } from "@/components/Faq";
 import { CtaBand } from "@/components/CtaBand";
@@ -30,9 +29,8 @@ export default function Home() {
         <LogoRail />
         <Pillars />
         <WhyUs />
-        <CaseStudies />
-        <Testimonials />
         <Process />
+        <CategoryDirectory />
         <Faq />
         <CtaBand />
       </main>

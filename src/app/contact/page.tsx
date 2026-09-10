@@ -1,0 +1,6 @@
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { AuditForm } from '@/components/AuditForm';
+import { site } from '@/lib/content';
+export const metadata={title:'Contact RA Tech',description:'Discuss your Amazon account, request an audit, or scope a project with RA Tech.'};
+export default function Contact(){return <><Header/><main id="main" className="band bg-mineral"><div className="shell grid gap-12 lg:grid-cols-2"><div><p className="eyebrow text-signal">Let’s talk growth</p><h1 className="display mt-5 text-[length:var(--text-mega)]">Bring us your next Amazon challenge.</h1><p className="mt-6 max-w-lg text-lg leading-relaxed text-ash">Tell us about your brand, current priorities, and the support you need. We’ll discuss where RA Tech fits and what the next step should be.</p><a className="mt-8 inline-block text-3xl font-bold text-signal" href={`tel:${site.phone}`}>{site.phone}</a><p className="mt-3 text-sm text-ash">Call the RA Tech team directly.</p><ul className="mt-8 space-y-3 text-ash"><li>✓ Free initial account audit for new clients</li><li>✓ Scope agreed before work begins</li><li>✓ Seven-day trial for eligible recurring services</li></ul></div><div id="audit"><AuditForm/></div></div></main><Footer/></>}
