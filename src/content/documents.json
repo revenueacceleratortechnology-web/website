@@ -1090,7 +1090,8 @@
         "a": "Amazon changes its advertising tools over time. We assess those changes against the campaigns already running before doing anything. If an update creates a practical reason to adjust the account, we change the management approach accordingly."
       }
     ],
-    "source": "ppc"
+    "source": "ppc",
+    "cta": "Discuss Your Amazon Advertising"
   },
   "services/amazon-seo": {
     "title": "Amazon SEO Services Built Around Real Search Demand",
@@ -1337,7 +1338,8 @@
         "a": "Yes. A seller does not need established sales history before starting SEO work. Initial priorities can come from product relevance, category demand, indexing, and available search evidence, then develop as the account generates more data."
       }
     ],
-    "source": "seo"
+    "source": "seo",
+    "cta": "Let RA Tech Review Your SEO"
   },
   "services/account-audit": {
     "title": "Amazon Seller Account Audit Services for Better Marketplace Decisions",
@@ -1455,12 +1457,17 @@
           {
             "title": "Profitability Context",
             "body": [
-              "When client information permits, fees, pricing, advertising spend, and margins are reviewed together. An Amazon account audit agency should be able to separate worthwhile growth from activity that is costing more than it contributes.",
-              "Bring Us the Problem. Judge the Work.",
-              "Give RA Tech one real Amazon problem and let our Amazon account audit find what is driving it. We review the account, identify the strongest opportunity or risk, and map the next action before asking you to commit further. You see how we think, what we uncover, and where the growth path begins. If the work proves useful, we can discuss deeper support through our full-service Amazon agency team."
+              "When client information permits, fees, pricing, advertising spend, and margins are reviewed together. An Amazon account audit agency should be able to separate worthwhile growth from activity that is costing more than it contributes."
             ]
           }
         ]
+      },
+      {
+        "title": "Bring Us the Problem. Judge the Work.",
+        "body": [
+          "Give RA Tech one real Amazon problem and let our Amazon account audit find what is driving it. We review the account, identify the strongest opportunity or risk, and map the next action before asking you to commit further. You see how we think, what we uncover, and where the growth path begins. If the work proves useful, we can discuss deeper support through our full-service Amazon agency team."
+        ],
+        "cards": []
       }
     ],
     "faqs": [
@@ -1505,7 +1512,8 @@
         "a": "Once the review is complete, you receive the main findings, their priority, and recommended follow-up. Some actions may belong with your internal team while others may require specialist support. Our Amazon management agency does not turn every audit point into a sales recommendation."
       }
     ],
-    "source": "audit"
+    "source": "audit",
+    "cta": "Audit My Amazon Account"
   },
   "services/growth-consulting": {
     "title": "Amazon Brand Growth Consulting for Stronger Sales and Scalable Growth",
@@ -1697,7 +1705,8 @@
         "a": "Pricing reflects the question you need answered and the depth required to answer it properly. Scope, complexity, available evidence, and the number of strategic workstreams all affect the engagement. We define those boundaries before resources are committed."
       }
     ],
-    "source": "consulting"
+    "source": "consulting",
+    "cta": "Explore Consultation Options"
   },
   "services/design": {
     "title": "Amazon Design Services Built Around the Amazon Shopping Experience",
@@ -2056,6 +2065,8 @@
         "a": "There is no useful universal price for every project. We quote after reviewing the number of assets, their complexity, the quality of current source files, and the expected revision workload."
       }
     ],
-    "source": "design"
+    "source": "design",
+    "cta": "Bring Us Your Amazon Design Problem",
+    "heroCta": "Discuss Your Amazon Design Project"
   }
 }
