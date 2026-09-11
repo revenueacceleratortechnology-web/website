@@ -3,7 +3,7 @@ export const site = {
   name: "RA Tech",
   legal: "Revenue Accelerator Technology",
   tagline: "A full-service Amazon agency for growing brands.",
-  phone: "8508504042",
+  phone: "+91 85085 04042",
   email: "",
   address: "",
 };
