@@ -54,7 +54,7 @@ export function AuditForm() {
           Copy your enquiry and share it with the team using your preferred messaging app, or call {site.phone}. Your details have not been sent.
         </p>
         <textarea aria-label="Prepared enquiry" readOnly value={enquiry} className="mt-5 h-40 w-full rounded-lg border border-hairline p-3 text-left text-sm text-ink" />
-        <a href={`tel:${site.phone}`} className="mt-4 block font-semibold text-signal">Call {site.phone}</a>
+        <a href={`tel:${site.phone.replace(/[^\d+]/g, "")}`} className="mt-4 block font-semibold text-signal">Call {site.phone}</a>
         <button
           type="button"
           onClick={() => setSent(false)}
