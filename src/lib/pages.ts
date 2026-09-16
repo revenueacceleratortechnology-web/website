@@ -1,6 +1,6 @@
 import documents from '@/content/documents.json';
 
-export type ContentSection = { title: string; body: string[]; cards: { title: string; body: string[] }[] };
+export type ContentSection = { title: string; body: string[]; cards: { title: string; body: string[] }[]; after?: string[] };
 export type ContentPage = { title: string; intro: string[]; sections: ContentSection[]; faqs: { q: string; a: string }[]; source?: string; cta?: string; heroCta?: string };
 export const pages: Record<string, ContentPage> = { ...documents };
 
@@ -72,7 +72,6 @@ export const categoryLinks=categories.map(([slug,label])=>({label,href:`/categor
 export const dtcLinks=dtc.map(([slug,label])=>({label,href:`/dtc/${slug}`}));
 for(const [path,title,body] of [
  ['categories','Amazon category expertise','Different categories create different customer questions. Explore how account strategy, advertising, search, and creative can work together for your products.'],
- ['dtc','Build growth beyond Amazon','Bring your website, customer relationships, and acquisition channels into a clear growth plan. Explore the disciplines below to find the right starting point.'],
  ['resources','Amazon seller resources','Explore practical starting points for understanding account performance, planning advertising, and improving product listings.'],
  ['results','Account performance and results','Evaluate the work through account data, clear reporting, and the changes that matter to your business. Contact RA Tech to discuss relevant experience for your category and scope.'],
  ['testimonials','Working with RA Tech','Choosing an agency means choosing the people responsible for recurring work. Talk with RA Tech about communication, ownership, reporting, and the experience relevant to your account.'],
