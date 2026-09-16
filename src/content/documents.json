@@ -2069,5 +2069,440 @@
     "source": "design",
     "cta": "Bring Us Your Amazon Design Problem",
     "heroCta": "Discuss Your Amazon Design Project"
+  },
+  "dtc": {
+    "title": "DTC Services for Amazon Brands Building Their Next Sales Channel",
+    "intro": [
+      "An established Amazon business gives direct commerce a useful starting point. RA Tech structures DTC services around the store, acquisition, conversion, retention, and measurement. Existing marketplace performance informs early decisions about products, offers, and demand.",
+      "Our direct-to-consumer services also cover the work required after launch. Store traffic needs a clear purchase path. First-time customers need a reason to return. Performance data then guides the next investment decision.",
+      "Bring us the direct-channel constraint you want solved first."
+    ],
+    "heroCta": "Discuss Your DTC Growth Plan",
+    "sections": [
+      {
+        "title": "Build the DTC Foundation Before You Push More Traffic",
+        "body": [
+          "Traffic is useful only when the store is ready to receive it. A broken path to purchase, unclear product information, or unreliable tracking can turn acquisition spend into noise. Our DTC e-commerce services begin with the store's operating layer before adding volume."
+        ],
+        "cards": [
+          {
+            "title": "Storefront structure",
+            "body": [
+              "The first job is making products easy to reach. Navigation, collections, and mobile layouts need enough structure to handle the size of the catalog. If an existing DTC website already does that well, it can remain the base."
+            ]
+          },
+          {
+            "title": "Product presentation",
+            "body": [
+              "Customers need correct pricing, variants, availability, imagery, and buying information before anything is promoted harder. Merchandising then shapes how related items, bundles, collections, and featured ranges appear. Decisions about assortment across several channels belong to a broader commerce discussion."
+            ]
+          },
+          {
+            "title": "Checkout readiness",
+            "body": [
+              "Traffic should not be scaled into a cart that still has unresolved problems. We check shipping information, payment methods, cart behavior, and the steps between intent and purchase. The store should also follow the real fulfillment and order-processing rules behind the business."
+            ]
+          },
+          {
+            "title": "Tracking setup",
+            "body": [
+              "Before campaign volume rises, the measurement layer needs to be trustworthy. E-commerce analytics should record where visitors came from, what they did, and which orders followed. That gives teams something useful to read across sessions, conversion, checkout drop-off, average order value, and customer activity."
+            ]
+          },
+          {
+            "title": "Customer capture and integrations",
+            "body": [
+              "A visitor remains anonymous until there is a consented way to identify the relationship. Email capture provides that first link. Necessary e-commerce integrations can then connect the store with marketing, reporting, customer data, or operations without adding tools for their own sake."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Decide What Amazon and DTC Should Each Do",
+        "body": [
+          "An Amazon to DTC move needs deliberate channel roles. Copying the marketplace catalog onto a direct store leaves important commercial questions unanswered. A stronger DTC strategy decides how products, offers, traffic, and customer relationships work across both environments. Marketplace demand can inform those decisions without dictating the direct-store experience."
+        ],
+        "cards": [
+          {
+            "title": "Product assortment",
+            "body": [
+              "Decide which products belong across both channels and where direct-only bundles or ranges make commercial sense."
+            ]
+          },
+          {
+            "title": "Pricing and promotions",
+            "body": [
+              "Review list prices, discounts, bundles, shipping offers, and promotional timing across the wider business."
+            ]
+          },
+          {
+            "title": "Customer journey",
+            "body": [
+              "Define how marketplace discovery, direct-store discovery, purchase, and repeat orders differ by channel."
+            ]
+          },
+          {
+            "title": "Traffic destination",
+            "body": [
+              "Match traffic intent with the destination best equipped to serve that shopper and campaign."
+            ]
+          },
+          {
+            "title": "Repeat purchase",
+            "body": [
+              "Identify opportunities for direct post-purchase communication and future orders where consent permits."
+            ]
+          },
+          {
+            "title": "Shared business context",
+            "body": [
+              "Read marketplace and direct-channel performance together before making broader commercial decisions."
+            ]
+          }
+        ],
+        "after": [
+          "A direct-to-consumer strategy should preserve the strengths of each channel. Amazon can continue serving marketplace demand. The direct store creates a separate environment for brand presentation, customer journeys, and first-party customer relationships."
+        ]
+      },
+      {
+        "title": "Bring Qualified Traffic Into the Direct Channel",
+        "body": [
+          "A ready store still needs relevant visitors. DTC marketing services should connect acquisition spending with product demand, accurate commerce data, and clear campaign roles."
+        ],
+        "cards": [
+          {
+            "title": "Paid Search and Shopping",
+            "body": [
+              "Search advertising can capture shoppers already expressing product demand. Product-led advertising depends heavily on the underlying commerce data. Shopping ads use Merchant Center product information to match products with relevant searches. Product images, titles, prices, availability, and other attributes influence how those ads appear. RA Tech can structure DTC paid media around the approved acquisition plan. Search intent, product economics, geographic coverage, and conversion tracking should guide campaign decisions."
+            ]
+          },
+          {
+            "title": "Paid Social",
+            "body": [
+              "Paid social introduces products before a shopper searches for them directly. Prospecting reaches new audiences, while retargeting reconnects with previous site visitors where consent and platform rules permit. Creative deserves close attention here. Product angle, format, audience, offer, and landing destination all affect the campaign. Media decisions should follow actual response data rather than a fixed creative formula."
+            ]
+          },
+          {
+            "title": "Product Feed Readiness",
+            "body": [
+              "Product advertising depends on accurate commerce data. Merchant Center product records may include titles, images, prices, availability, identifiers, and landing-page information. Feed and landing-page mismatches can lead to warnings or disapprovals. Feed review belongs inside e-commerce paid advertising when product data directly affects campaign eligibility or presentation. Inventory changes also need timely updates."
+            ]
+          },
+          {
+            "title": "Campaign Structure and Budget",
+            "body": [
+              "Acquisition budgets need defined jobs. Prospecting, retargeting, branded demand, product-led campaigns, and experiments consume budget differently. RA Tech sets campaign priorities from the agreed commercial plan. Budget changes then follow performance evidence, inventory position, promotional timing, and the role assigned to each campaign."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Turn DTC Traffic Into Completed Orders",
+        "body": [
+          "Traffic creates an opportunity. The store still has to convert that visit into a purchase. Our DTC conversion rate optimization work examines the points between arrival and completed checkout. Store analytics can separate product views, cart additions, checkout progress, and completed purchases, giving conversion work a stronger factual base."
+        ],
+        "cards": [
+          {
+            "title": "Product Page Conversion",
+            "body": [
+              "Product pages need to answer the purchase questions that remain after acquisition. Information priority changes according to the product. Size, specifications, ingredients, compatibility, use, delivery, or comparison details may carry different weight. Our e-commerce CRO review looks for missing information, visual confusion, weak selection logic, and unclear offers. Changes should address observed friction or a defined hypothesis."
+            ]
+          },
+          {
+            "title": "Landing Page Alignment",
+            "body": [
+              "Campaign traffic should reach a page that carries the same product, offer, and message. A disconnect between advertisement and destination introduces unnecessary work for the shopper. Landing page optimization focuses on that continuity. Page structure, content priority, product choice, and action hierarchy need to support the intent that generated the visit."
+            ]
+          },
+          {
+            "title": "Cart and Checkout Friction",
+            "body": [
+              "Cart and checkout behavior can expose problems that product pages cannot. Shipping surprises, unclear payment options, unnecessary fields, or technical interruptions can stop an otherwise qualified shopper. Conversion reporting should separate cart additions, reached checkouts, and completed purchases. That separation shows where purchase progression weakens."
+            ]
+          },
+          {
+            "title": "Testing and Behavioral Data",
+            "body": [
+              "A test needs a specific question before design changes begin. Analytics may identify the weak stage first. Behavioral tools can add click, scroll, or session evidence where the approved setup supports them. Testing priority should consider traffic volume and commercial impact. One meaningful experiment can provide clearer evidence than several simultaneous changes."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Keep the Customer Relationship Active After Purchase",
+        "body": [
+          "Direct commerce continues after the first order. Customer records can support segmentation using purchase activity, order count, amount spent, location, and subscription status. Cohort analysis can also examine repeat purchasing and customer retention over time.",
+          "Our DTC customer retention work can organize lifecycle communication around customer behavior and consent."
+        ],
+        "cards": [
+          {
+            "title": "Welcome and first-purchase journeys",
+            "body": [
+              "New subscribers need context before another promotion arrives. A welcome sequence can introduce the brand, clarify the product range, answer early purchase questions, and support movement toward a first order."
+            ]
+          },
+          {
+            "title": "Cart and browse recovery",
+            "body": [
+              "Interrupted shopping creates a different communication need. Recovery messages should reference the relevant behavior and purchase context where the technology supports it. Frequency and timing need restraint because aggressive sequences can weaken the customer experience."
+            ]
+          },
+          {
+            "title": "Post-purchase and repeat-order journeys",
+            "body": [
+              "Order communication can continue into product education, complementary recommendations, replenishment timing, or future purchase prompts. Product type determines which paths make sense. DTC email marketing should reflect the customer's actual stage instead of repeating acquisition messaging."
+            ]
+          },
+          {
+            "title": "Win-back and customer segments",
+            "body": [
+              "Lapsed buyers, frequent purchasers, recent customers, and higher-spending groups behave differently. Customer segmentation can use order history and other available customer attributes. Lifecycle marketing then gives each selected group a defined communication purpose."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Understand DTC Performance Beyond Platform ROAS",
+        "body": [
+          "A direct channel produces several layers of performance data. Advertisement return alone cannot explain store conversion, repeat purchasing, order economics, or customer behavior. DTC analytics should answer the commercial question behind each metric. Definitions also need consistency across reporting periods."
+        ],
+        "cards": [
+          {
+            "title": "Revenue",
+            "body": [
+              "How much recorded sales activity the direct channel generated."
+            ]
+          },
+          {
+            "title": "Conversion rate",
+            "body": [
+              "What share of online-store sessions resulted in an order."
+            ]
+          },
+          {
+            "title": "Average order value",
+            "body": [
+              "How much sales value an average order carried."
+            ]
+          },
+          {
+            "title": "New vs returning customers",
+            "body": [
+              "How first-time purchasing compares with repeat customer activity."
+            ]
+          },
+          {
+            "title": "Customer acquisition cost",
+            "body": [
+              "How much defined acquisition spending was required per acquired customer."
+            ]
+          },
+          {
+            "title": "Repeat purchase rate",
+            "body": [
+              "How frequently customers returned for another order."
+            ]
+          },
+          {
+            "title": "Cohort retention",
+            "body": [
+              "How groups acquired during similar periods behaved after their first purchase."
+            ]
+          },
+          {
+            "title": "Paid-media efficiency",
+            "body": [
+              "How advertising spend related to the agreed tracked commercial outcomes."
+            ]
+          },
+          {
+            "title": "Gross margin",
+            "body": [
+              "What remained after product costs where accurate cost data was maintained."
+            ]
+          },
+          {
+            "title": "Contribution margin",
+            "body": [
+              "What remained after the business's agreed variable-cost categories."
+            ]
+          }
+        ],
+        "after": [
+          "Current e-commerce reporting can support conversion rate, average order value, new-versus-returning customer analysis, cohort performance, and purchase behavior.",
+          "Customer acquisition cost requires an agreed spending and customer definition. Contribution margin also depends on the cost categories your business includes. RA Tech keeps DTC performance reporting tied to those definitions before comparing periods or channels."
+        ]
+      },
+      {
+        "title": "How RA Tech Builds and Runs Your DTC Growth Plan?",
+        "body": [
+          "A DTC engagement needs an order of work. Store changes, paid acquisition, conversion work, and retention can depend on each other, so every discipline should not begin at once."
+        ],
+        "cards": [
+          {
+            "title": "Assess the Current Setup",
+            "body": [
+              "RA Tech begins with the operating environment already in place. The review covers relevant store structure, direct traffic, tracking, lifecycle setup, and existing Amazon context. The assessment identifies the current constraint and any dependency behind it. A store with unreliable tracking needs a different starting point from a store with sound measurement and weak acquisition."
+            ]
+          },
+          {
+            "title": "Set the Priority Order",
+            "body": [
+              "The first workstream should address the constraint blocking useful progress. Existing strengths remain in place where they support the plan. Our DTC strategy orders work around dependencies, available resources, and commercial priority. The sequence can also reflect product availability, seasonal demand, or a planned launch."
+            ]
+          },
+          {
+            "title": "Execute the Agreed Work",
+            "body": [
+              "Each workstream receives a defined owner and approved scope. RA Tech coordinates delivery across the areas included in the engagement. The arrangement keeps DTC growth services specific enough to manage. Store work, media, conversion, and retention retain separate responsibilities even when they influence the same commercial outcome."
+            ]
+          },
+          {
+            "title": "Review the Operating State",
+            "body": [
+              "Completed work creates a new baseline for the next decision. Performance reviews examine the relevant evidence and identify the next constraint. A new priority may involve further execution, a test, budget movement, or no immediate change. The evidence determines the next scope."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "When DTC Services Make Sense for an Amazon Brand?",
+        "body": [
+          "Direct commerce can start from very different positions. The right entry point depends on what already works and where growth currently stalls."
+        ],
+        "cards": [
+          {
+            "title": "Amazon performs, but no direct store exists",
+            "body": [
+              "Build the direct-channel foundation."
+            ]
+          },
+          {
+            "title": "A direct store exists, but qualified traffic remains limited",
+            "body": [
+              "Develop acquisition."
+            ]
+          },
+          {
+            "title": "Traffic arrives, but purchase completion remains weak",
+            "body": [
+              "Investigate conversion."
+            ]
+          },
+          {
+            "title": "First orders occur, but repeat purchasing remains limited",
+            "body": [
+              "Build retention journeys."
+            ]
+          },
+          {
+            "title": "Reporting exists, but decisions remain unclear",
+            "body": [
+              "Rework measurement and interpretation."
+            ]
+          },
+          {
+            "title": "Amazon and DTC decisions happen independently",
+            "body": [
+              "Define cross-channel roles."
+            ]
+          },
+          {
+            "title": "Several DTC workstreams already operate",
+            "body": [
+              "Coordinate ongoing management."
+            ]
+          }
+        ],
+        "after": [
+          "A DTC growth agency should identify the starting constraint before expanding scope. A DTC e-commerce agency also needs enough channel context to distinguish a traffic problem from a store, retention, or measurement problem."
+        ]
+      },
+      {
+        "title": "Why Amazon Brands Choose RA Tech for DTC Growth?",
+        "body": [
+          "Our DTC services are built around a brand's existing commerce position. RA Tech brings Amazon experience into the discussion while keeping direct-channel work accountable to its own operating requirements."
+        ],
+        "cards": [
+          {
+            "title": "Amazon Context Is Already in the Room",
+            "body": [
+              "RA Tech works with brands inside the Amazon marketplace. That background gives the direct-channel team useful product, advertising, catalog, and operating context from the outset. An Amazon agency perspective becomes valuable when DTC growth affects the same products, inventory, or wider commercial decisions. Marketplace context remains an input rather than a substitute for direct-channel evidence."
+            ]
+          },
+          {
+            "title": "Specialists Keep Clear Ownership",
+            "body": [
+              "DTC work spans different disciplines. Store changes, acquisition, conversion, and retention require different operating skills. RA Tech keeps ownership visible across the engagement. An e-commerce agency should make the responsible workstream clear when several teams touch the same customer journey."
+            ]
+          },
+          {
+            "title": "Scope Starts With the Current Constraint",
+            "body": [
+              "A functioning store does not need automatic replacement. Strong acquisition does not call for another media layer when checkout performance is the real problem. RA Tech scopes the current constraint first. That approach keeps a DTC growth agency engagement focused on work the business can use now."
+            ]
+          },
+          {
+            "title": "Connected Teams, Separate Workstreams",
+            "body": [
+              "Account context can move between relevant teams without blending every service into one undefined scope. Each approved workstream keeps its own deliverables and working responsibility. A full-service e-commerce agency gains value from that coordination only when responsibilities remain clear. RA Tech uses shared context where the engagement needs it."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Build the Direct Channel Around the Business You Already Have",
+        "body": [
+          "Your direct channel can begin from the business already operating today. Bring RA Tech the storefront, acquisition, conversion, retention, or measurement constraint limiting the next move.",
+          "Our DTC services can start with that defined problem. Wider DTC growth services can enter later when the operating evidence supports a broader scope.",
+          "Your Amazon business remains part of the commercial picture. Our direct-to-consumer services give the direct channel its own working plan."
+        ],
+        "cards": []
+      }
+    ],
+    "cta": "Discuss Your DTC Growth Plan",
+    "faqs": [
+      {
+        "q": "What do RA Tech's DTC services include?",
+        "a": "RA Tech's DTC services can cover e-commerce foundations, paid acquisition, conversion work, retention, measurement, and ongoing management. The exact mix follows your existing setup, current constraints, approved platforms, and agreed project scope."
+      },
+      {
+        "q": "Can RA Tech work with a DTC store that is already live?",
+        "a": "An existing store can remain the starting point. RA Tech reviews its structure, tracking, traffic, conversion path, and retention setup before recommending work. Useful existing systems remain part of the operating plan."
+      },
+      {
+        "q": "Which e-commerce platforms do you support?",
+        "a": "Platform support is decided around the actual job. RA Tech reviews your store environment, technical dependencies, integrations, and project requirements before committing to a specific setup. That prevents a development or migration promise from being made before the stack is properly understood."
+      },
+      {
+        "q": "Do I need to stop selling on Amazon to build DTC?",
+        "a": "Amazon can remain part of your channel mix. The DTC plan gives direct commerce a separate operating role while marketplace performance continues. Product, offer, traffic, and customer decisions are reviewed across both channels."
+      },
+      {
+        "q": "Can RA Tech manage only one part of my DTC operation?",
+        "a": "A focused engagement can cover a single constraint such as acquisition, conversion, retention, or measurement. Broader work enters scope only after the business need and dependencies are clear."
+      },
+      {
+        "q": "What account access will RA Tech need?",
+        "a": "Access is requested by function, not by habit. Store work may need administrative permissions. Reporting, advertising, feeds, or marketing tasks may need access elsewhere. RA Tech defines those requirements during onboarding so the team receives only what is necessary."
+      },
+      {
+        "q": "How long does a DTC engagement take to start?",
+        "a": "There is no single setup period for every project. A smaller optimization engagement can have fewer dependencies. A larger DTC build may involve platform preparation, access collection, integration checks, and multiple channels before work can properly start."
+      },
+      {
+        "q": "How do you measure DTC performance?",
+        "a": "Reporting starts from the commercial question being evaluated. Revenue, conversion rate, average order value, customer acquisition cost, repeat purchasing, retention, and margin measures can enter the review when reliable underlying data exists."
+      },
+      {
+        "q": "Can Amazon and DTC use the same products and pricing?",
+        "a": "Shared products are possible across both channels. Pricing, bundles, promotions, shipping offers, and assortment still need individual review. RA Tech considers the wider channel strategy before recommending how each offer should be structured."
+      },
+      {
+        "q": "How are DTC services priced?",
+        "a": "Pricing follows the work included in scope. A focused conversion project differs from ongoing acquisition or broader e-commerce management. RA Tech reviews the existing setup, responsibilities, required platforms, and delivery workload before quoting."
+      }
+    ],
+    "source": "dtc"
   }
 }

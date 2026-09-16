@@ -76,10 +76,12 @@ export function Faq({
                 </h3>
                 <div
                   id={`faq-panel-${i}`}
-                  hidden={!isOpen}
-                  className="pb-6 pr-10 text-[0.9375rem] leading-relaxed text-ash"
+                  aria-hidden={!isOpen}
+                  className={`grid transition-[grid-template-rows] duration-300 ease-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
                 >
-                  {f.a}
+                  <div className="overflow-hidden">
+                    <div className="pb-6 pr-10 text-[0.9375rem] leading-relaxed text-ash">{f.a}</div>
+                  </div>
                 </div>
               </li>
             );

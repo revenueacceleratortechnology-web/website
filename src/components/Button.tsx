@@ -27,7 +27,7 @@ export function Button({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold transition-colors duration-200 ${styles[variant]} ${className}`}
+      className={`group inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold transition-[color,background-color,border-color,transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_24px_-14px_rgba(14,27,30,0.5)] active:translate-y-0 ${styles[variant]} ${className}`}
     >
       {children}
       {arrow && (
