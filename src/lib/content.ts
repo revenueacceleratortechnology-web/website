@@ -64,7 +64,6 @@ export const nav: NavGroup[] = [
           { label: "Account audit", href: "/services#core", featured: true },
           { label: "Growth consulting", href: "/services#core", featured: true },
           { label: "SOPs", href: "/services/sops", featured: true },
-          { label: "Book a coaching call", href: "/coaching", featured: true },
           { label: "Free Amazon resources", href: "/resources", featured: true },
           { label: "All services", href: "/services", featured: true },
         ],
@@ -208,7 +207,6 @@ export const nav: NavGroup[] = [
       },
     ],
   },
-  { label: "Coaching", href: "#services" },
 ];
 
 export type UtilityLink = {

@@ -23,7 +23,7 @@ const slug=(t: string)=>t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-
 export function ContentPage({ path }: { path: string }) {
  const page=pages[path];
  const visible=page.sections.filter(s=>!s.title.includes('Client')&&!s.title.includes('Delivered'));
- const links=path==='categories'?categoryLinks:path==='dtc'?dtcLinks:path==='services'?serviceLinks:path==='resources'||path==='digital-products'?[{label:'Amazon operating procedures',href:'/services/sops'},{label:'Advertising fundamentals',href:'/services/ppc-management'},{label:'Search and listing visibility',href:'/services/amazon-seo'},{label:'Book a coaching discussion',href:'/coaching'}]:[];
+ const links=path==='categories'?categoryLinks:path==='dtc'?dtcLinks:path==='services'?serviceLinks:path==='resources'||path==='digital-products'?[{label:'Amazon operating procedures',href:'/services/sops'},{label:'Advertising fundamentals',href:'/services/ppc-management'},{label:'Search and listing visibility',href:'/services/amazon-seo'}]:[];
  return <><Header/><main id="main">
   <section className="detail-hero">
    <div className="shell">
