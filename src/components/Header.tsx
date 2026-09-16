@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 import { Button } from "./Button";
+import { MobileNav } from "./MobileNav";
 import { nav, utilityNav, site } from "@/lib/content";
 import type { NavColumn, NavCard } from "@/lib/content";
 
@@ -521,75 +522,7 @@ export function Header() {
         </div>
       )}
 
-      {/* Mobile drawer */}
-      {open && (
-        <div
-          id="mobile-nav"
-          className="fixed inset-x-0 top-[3.75rem] bottom-0 z-40 overflow-y-auto border-t border-hairline bg-paper px-5 pb-10 pt-4 lg:hidden"
-        >
-          <ul className="divide-y divide-hairline">
-            {nav.map((item) => (
-              <li key={item.label} className="py-4">
-                <Link
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="display block text-2xl"
-                >
-                  {item.label}
-                </Link>
-                {item.columns && (
-                  <div className="mt-3 space-y-3">
-                    {item.columns.map((col, i) => (
-                      <div key={col.lead?.label ?? col.heading ?? i}>
-                        {(col.lead || col.heading) && (
-                          <p className="eyebrow mb-1.5 text-signal">
-                            {col.lead?.label ?? col.heading}
-                          </p>
-                        )}
-                        <div className="flex flex-wrap gap-x-5 gap-y-1">
-                          {col.links.map((l) => (
-                            <Link
-                              key={l.label}
-                              href={l.href}
-                              onClick={() => setOpen(false)}
-                              className="text-sm text-ash"
-                            >
-                              {l.label}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </li>
-            ))}
-          </ul>
-
-          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 border-t border-hairline pt-6">
-            {utilityNav.map((u) => (
-              <Link
-                key={u.label}
-                href={u.href}
-                onClick={() => setOpen(false)}
-                className="text-sm text-ash"
-              >
-                {u.label}
-              </Link>
-            ))}
-          </div>
-
-          <Button href="/contact" className="mt-8 w-full">
-            Get a free account audit
-          </Button>
-          <a
-            href={`tel:${site.phone.replace(/[^\d+]/g, "")}`}
-            className="mt-3 block text-center font-mono text-sm text-ash"
-          >
-            {site.phone}
-          </a>
-        </div>
-      )}
+      <MobileNav open={open} />
     </header>
   );
 }
