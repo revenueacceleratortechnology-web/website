@@ -1,7 +1,7 @@
 import documents from '@/content/documents.json';
 
 export type ContentSection = { title: string; body: string[]; cards: { title: string; body: string[] }[]; after?: string[] };
-export type ContentPage = { title: string; intro: string[]; sections: ContentSection[]; faqs: { q: string; a: string }[]; source?: string; cta?: string; heroCta?: string };
+export type ContentPage = { title: string; intro: string[]; sections: ContentSection[]; faqs: { q: string; a: string }[]; source?: string; cta?: string; heroCta?: string; faqIntro?: string };
 export const pages: Record<string, ContentPage> = { ...documents };
 
 const services: [string, string, string][] = [
@@ -47,6 +47,7 @@ const categories: [string,string,string][] = [
  ['supplements','Supplements','Keep ingredient information, serving details, and product positioning clear and supported. Creative and advertising briefs need to account for category restrictions and the documentation available.'],
 ];
 function add(path: string,title: string,body: string,group: string) {
+ if(pages[path]) return; // a supplied document already covers this page
  pages[path]={title,intro:[body],sections:[
   {title:`A focused plan for ${title.toLowerCase()}`,body:[`We start with your current ${group}, the priorities you want to address, and the information available. The engagement is defined before work begins, with clear responsibilities and review points.`],cards:[
    {title:'Review the current position',body:['Bring recent performance data, existing assets, and the issue or opportunity you want to address. We establish the starting point together.']},
