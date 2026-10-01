@@ -8391,5 +8391,958 @@
       }
     ],
     "source": "troubleshooting"
+  },
+  "dtc/google-ads": {
+    "title": "Google Ads Management Services That Put Spend to Better Work",
+    "intro": [
+      "Google Ads works best when the account has a clear commercial signal behind it. Traffic alone cannot tell the platform which orders, leads, or customer actions carry real value. RA Tech builds Google Ads management services around that signal, then connects campaign choice, search demand, creative, landing pages, bidding, and reporting around the same outcome. As an Amazon marketing agency, we also keep Amazon-directed campaigns separate when the destination and measurement path change."
+    ],
+    "sections": [
+      {
+        "title": "Build a Reliable Google Ads Measurement Foundation",
+        "body": [
+          "Automated bidding needs a useful definition of success before it starts learning from customer activity. A purchase, qualified lead, booked call, or completed sale can each play a different role inside the account.",
+          "Our Google Ads management work begins with the signals already available. Wider checkout or tracking problems can move into ecommerce audit services when the issue extends beyond paid media."
+        ],
+        "cards": [
+          {
+            "title": "Business conversion",
+            "body": [
+              "The customer action representing a meaningful commercial outcome"
+            ]
+          },
+          {
+            "title": "Primary actions",
+            "body": [
+              "Conversions allowed to guide bidding"
+            ]
+          },
+          {
+            "title": "Secondary actions",
+            "body": [
+              "Useful events retained for observation"
+            ]
+          },
+          {
+            "title": "Conversion values",
+            "body": [
+              "Approved values for outcomes carrying different commercial weight"
+            ]
+          },
+          {
+            "title": "Base tracking",
+            "body": [
+              "Google tag or Google Tag Manager measurement"
+            ]
+          },
+          {
+            "title": "Enhanced conversions",
+            "body": [
+              "Enhanced conversions using approved first-party data where applicable"
+            ]
+          },
+          {
+            "title": "Offline outcomes",
+            "body": [
+              "CRM or later sales outcomes where supported"
+            ]
+          },
+          {
+            "title": "Consent signals",
+            "body": [
+              "Measurement aligned with the existing consent mode setup"
+            ]
+          }
+        ],
+        "after": [
+          "Cleaner signals reduce the risk of spending toward activity that looks useful inside the platform but carries weak commercial value."
+        ]
+      },
+      {
+        "title": "Select the Right Google Ads Campaign Type",
+        "body": [
+          "Different campaign environments answer different buying situations. The choice depends on how customers discover the offer, what advertising material is available, and where the conversion happens.",
+          "RA Tech uses Google Ads campaign management to build the campaign mix around that commercial job."
+        ],
+        "cards": [
+          {
+            "title": "Search Campaigns",
+            "body": [
+              "Search campaigns cover customers already expressing demand through a query. They work best when the offer and destination closely match the intent behind that search."
+            ]
+          },
+          {
+            "title": "Shopping Campaigns",
+            "body": [
+              "Shopping campaigns use retail product data from Merchant Center. They suit eligible ecommerce catalogs where customers need product-led discovery and comparison."
+            ]
+          },
+          {
+            "title": "Performance Max",
+            "body": [
+              "Performance Max can extend coverage across several Google properties from one objective-led campaign. Reliable conversion signals, usable assets, and clear controls become important inputs."
+            ]
+          },
+          {
+            "title": "Demand Gen",
+            "body": [
+              "Demand Gen supports visual discovery where customers may encounter the brand before they actively search. Creative carries a larger role at this earlier stage."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Google Search Ads Management for Keywords, Search Terms and AI Max",
+        "body": [
+          "Search traffic becomes expensive when the account keeps paying for queries with weak commercial relevance. Keyword planning identifies intended demand, then actual search behavior shows where money is really going.",
+          "Our Google Search Ads management reviews both sides of that equation. AI Max can expand matching beyond the original keyword set, so live query analysis remains part of account control.",
+          "The working review covers several areas.",
+          "Search intent is mapped around products, services, and buying situations the account can serve.",
+          "Search terms are reviewed after launch to see which real queries consume spend.",
+          "Negative keywords are added when recurring irrelevant searches create avoidable cost.",
+          "Brand controls are used where campaigns need tighter inclusion or exclusion rules.",
+          "New query patterns are separated from weak expansion before extra budget moves toward them.",
+          "Conversion quality is checked before growing search terms receive wider coverage.",
+          "Search management owns demand quality. Bidding, creative, and landing-page decisions remain separate."
+        ],
+        "cards": []
+      },
+      {
+        "title": "Keep Google Merchant Center Ready for Advertising",
+        "body": [
+          "Shopping performance starts with the information Google receives about each product. An outdated price, missing identifier, weak image, or policy issue can restrict retail advertising before bidding has much room to work.",
+          "Our Google Shopping management keeps Google Merchant Center data ready for ecommerce campaigns."
+        ],
+        "cards": [
+          {
+            "title": "Product titles",
+            "body": [
+              "Clear and accurate product identification"
+            ]
+          },
+          {
+            "title": "Descriptions",
+            "body": [
+              "Useful product detail inside the feed"
+            ]
+          },
+          {
+            "title": "Identifiers",
+            "body": [
+              "Applicable GTIN and required identifiers"
+            ]
+          },
+          {
+            "title": "Price",
+            "body": [
+              "Agreement between feed and store pricing"
+            ]
+          },
+          {
+            "title": "Availability",
+            "body": [
+              "Current stock status"
+            ]
+          },
+          {
+            "title": "Product images",
+            "body": [
+              "Feed-compliant imagery representing the item clearly"
+            ]
+          },
+          {
+            "title": "Variants",
+            "body": [
+              "Size, color, and item-group data where required"
+            ]
+          },
+          {
+            "title": "Policy status",
+            "body": [
+              "Warnings, disapprovals, and eligibility issues"
+            ]
+          },
+          {
+            "title": "Feed freshness",
+            "body": [
+              "How current information reaches Merchant Center"
+            ]
+          }
+        ],
+        "after": [
+          "Accurate catalog inputs give retail automation better information to work with across e-commerce Google Ads management."
+        ]
+      },
+      {
+        "title": "Google Ads Creative Management for Search, Performance Max and Demand Gen",
+        "body": [
+          "Automation performs with the material available to it. Thin headline sets, generic imagery, or weak video assets leave fewer useful combinations for the platform to test.",
+          "Our Google Ads optimization services prepare the creative inputs needed for each active campaign environment."
+        ],
+        "cards": [
+          {
+            "title": "Search Ad Assets",
+            "body": [
+              "Responsive search ads need headlines, descriptions, business information, and supporting assets that reflect the searcher’s intent and the approved offer."
+            ]
+          },
+          {
+            "title": "Performance Max Assets",
+            "body": [
+              "Asset groups can combine text, logos, images, video, and retail information where applicable. Each element needs to represent the offer clearly on its own."
+            ]
+          },
+          {
+            "title": "Demand Gen Creative",
+            "body": [
+              "Visual placements have to create interest before a search may exist. RA Tech develops the message and creative around that earlier customer stage."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Align Google Ads With the Right Landing Pages",
+        "body": [
+          "A strong ad can lose value after the click when the destination changes the offer or adds friction. Paid traffic needs a page that carries the same commercial promise forward.",
+          "RA Tech reviews landing pages from a paid-media perspective. Wider organic, content, or technical work can move into website SEO services when the problem falls outside advertising scope.",
+          "The paid-destination review covers these points.",
+          "The page should match the product, service, or offer presented in the ad.",
+          "Mobile visitors need a usable path to the approved conversion action.",
+          "Pricing, product, or service information should remain consistent after the click.",
+          "Final URL expansion is reviewed before automation can select other pages.",
+          "URL exclusions keep unsuitable pages outside paid traffic.",
+          "Conversion friction is recorded when it can interfere with paid-media performance.",
+          "Paid landing-page work ends with the advertising journey. Organic search performance remains a separate workstream."
+        ],
+        "cards": []
+      },
+      {
+        "title": "Spend With a Reason Behind Every Bid",
+        "body": [
+          "Bidding becomes more useful once the conversion signal has a clear commercial meaning. The next decision concerns how the account should compete for that outcome and how much spend each campaign can access.",
+          "RA Tech uses the bidding path that matches the available data and business requirement."
+        ],
+        "cards": [
+          {
+            "title": "Conversion Volume",
+            "body": [
+              "Maximize conversions or an approved Target CPA approach can support accounts focused on generating a defined action within available spend."
+            ]
+          },
+          {
+            "title": "Conversion Value",
+            "body": [
+              "Maximize conversion value or Target ROAS can support accounts where conversion values differ and dependable value data exists."
+            ]
+          },
+          {
+            "title": "Budget Allocation",
+            "body": [
+              "Campaign budgets are reviewed against commercial priority, demand, seasonality, inventory, and recent account evidence."
+            ]
+          },
+          {
+            "title": "Controlled Scaling",
+            "body": [
+              "Large changes can interrupt learning and make short-term results harder to interpret. RA Tech adjusts spend with awareness of conversion cycles and recent campaign behavior."
+            ]
+          }
+        ],
+        "after": [
+          "Our Google Ads management services keep bidding and available spend connected with the commercial outcome already defined earlier in the account."
+        ]
+      },
+      {
+        "title": "Google Ads for Amazon With Amazon Attribution Tracking",
+        "body": [
+          "Google traffic ending on Amazon follows a different measurement path from traffic ending on an owned ecommerce store. RA Tech keeps those models separate before campaign decisions are made.",
+          "As an Amazon e-commerce agency, we use Amazon Attribution where the advertiser, destination, and market are eligible."
+        ],
+        "cards": [
+          {
+            "title": "Destination",
+            "body": [
+              "Approved Amazon product detail page or Store"
+            ]
+          },
+          {
+            "title": "Measurement",
+            "body": [
+              "Amazon Attribution where eligibility and market support are available"
+            ]
+          },
+          {
+            "title": "Conversion view",
+            "body": [
+              "Attributed detail-page views, add-to-carts, purchases, and sales"
+            ]
+          },
+          {
+            "title": "Campaign tagging",
+            "body": [
+              "Approved attribution tags connected with external activity"
+            ]
+          },
+          {
+            "title": "Product readiness",
+            "body": [
+              "Amazon destination prepared before paid traffic increases"
+            ]
+          },
+          {
+            "title": "Referral benefit",
+            "body": [
+              "Eligible US Seller Brand Owners may qualify for the Brand Referral Bonus program"
+            ]
+          }
+        ],
+        "after": [
+          "A weak Amazon destination can waste external traffic. Amazon product listing services can address product-page issues before additional spend moves there. Owned-store tracking, Merchant Center feeds, and Amazon-side measurement remain separate systems."
+        ]
+      },
+      {
+        "title": "Google Ads Reporting for CPA, ROAS, Revenue and Lead Quality",
+        "body": [
+          "Platform metrics become useful when they explain what the account produced from the money spent. RA Tech separates delivery, conversion, value, and business quality before choosing what needs work next.",
+          "The review moves from platform activity toward commercial evidence."
+        ],
+        "cards": [
+          {
+            "title": "Delivery Signals",
+            "body": [
+              "Impressions, clicks, and cost per click show how campaigns are entering the market and attracting traffic."
+            ]
+          },
+          {
+            "title": "Conversion Signals",
+            "body": [
+              "Conversion rate, cost per acquisition, purchases, and approved lead actions show what happened after the click."
+            ]
+          },
+          {
+            "title": "Value Signals",
+            "body": [
+              "Conversion value, revenue, and return on ad spend add commercial context when dependable value data exists."
+            ]
+          },
+          {
+            "title": "Business Quality",
+            "body": [
+              "Qualified leads, completed sales, customer value, product economics, or CRM outcomes can sharpen the picture when those signals are available."
+            ]
+          },
+          {
+            "title": "Next-Test Priority",
+            "body": [
+              "The next change comes from the evidence already collected. RA Tech avoids changing several major systems together when one focused test can provide a clearer answer."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Our Google Ads Management Process",
+        "body": [
+          "Google Ads work can involve account access, tracking, campaigns, creative, product data, approvals, and reporting during the same period. RA Tech keeps those workstreams organized so live account decisions do not disappear inside scattered requests.",
+          "The project follows a defined working structure."
+        ],
+        "cards": [
+          {
+            "title": "Confirm Account Scope",
+            "body": [
+              "Markets, destinations, products or services, campaign boundaries, commercial priorities, and reporting expectations are agreed before scheduled management begins."
+            ]
+          },
+          {
+            "title": "Collect Required Access",
+            "body": [
+              "Google Ads, analytics, Merchant Center, website, creative, CRM, or Amazon Attribution access is gathered according to the approved scope."
+            ]
+          },
+          {
+            "title": "Assign Working Owners",
+            "body": [
+              "Account management, tracking coordination, creative, ecommerce inputs, client communication, and reporting receive clear ownership and handoff points."
+            ]
+          },
+          {
+            "title": "Set Approval Points",
+            "body": [
+              "Budget changes, new campaigns, promotions, creative, and other material account changes may need client approval before work continues."
+            ]
+          },
+          {
+            "title": "Manage Production Calendar",
+            "body": [
+              "Campaign launches, promotional periods, asset requests, client inputs, and review dates remain visible in one working schedule."
+            ]
+          },
+          {
+            "title": "Coordinate Client Inputs",
+            "body": [
+              "Pricing, inventory changes, lead-quality feedback, promotions, product updates, or fresh creative are requested when active work depends on them."
+            ]
+          },
+          {
+            "title": "Prepare Account Review",
+            "body": [
+              "Completed work, current account conditions, unresolved items, and client actions are organized before the review begins."
+            ]
+          },
+          {
+            "title": "Set the Next Work Cycle",
+            "body": [
+              "The next period starts with approved priorities carried forward from the account review and current commercial needs."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "What You Receive From Our Google Ads Management Services",
+        "body": [
+          "The client handoff keeps account decisions and completed work easy to follow. Each output has a defined role inside the approved engagement.",
+          "Our Google Ads management services can include the following working files.",
+          "Measurement setup notes record approved conversion and tracking requirements.",
+          "Campaign architecture plan maps selected campaign environments and their commercial roles.",
+          "Search-demand map records paid-search areas selected for active coverage.",
+          "Merchant Center action file records product-data issues where ecommerce scope applies.",
+          "Ad and asset plan records creative requirements across active campaigns.",
+          "Paid-destination recommendations capture landing-page or URL-control actions.",
+          "Bidding and budget plan records the approved spending framework.",
+          "Amazon Attribution setup notes are included where Amazon-directed activity applies.",
+          "Performance reporting file brings key campaign and business signals into one review."
+        ],
+        "cards": []
+      },
+      {
+        "title": "Put Your Google Ads Budget Behind Better Signals",
+        "body": [
+          "Weak tracking, broad automation, or poorly directed spend can make a busy account look healthier than it is. RA Tech starts with the account as it stands and finds where paid-media control needs work.",
+          "New clients can begin with a free initial account audit. Eligible recurring Google Ads management services can also start with a seven-day free trial.",
+          "Find where your Google Ads budget is losing value."
+        ],
+        "cards": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can RA Tech Take Over an Existing Google Ads Account?",
+        "a": "RA Tech can review the current structure, historical data, active campaigns, conversion setup, and existing controls before the next management scope is agreed."
+      },
+      {
+        "q": "Can Management Start With Search Campaigns Only?",
+        "a": "Yes. Search can be the whole starting scope when the business wants paid intent coverage first. Other campaign types can stay out until there is a clear case for adding them."
+      },
+      {
+        "q": "Can RA Tech Manage Google Ads for Several Websites?",
+        "a": "Yes, though the accounts should not blur together. Each website needs its own budget logic, conversions, reporting, ownership, and operating responsibility before management begins."
+      },
+      {
+        "q": "Can Existing Campaigns and Historical Data Be Retained?",
+        "a": "A takeover can keep the existing account history intact. Current campaigns and past data remain available while RA Tech works out which parts are still useful."
+      },
+      {
+        "q": "Are Creative Assets Included in Google Ads Management?",
+        "a": "Creative work is agreed before the campaigns move into production. The scope may cover text, image, video, or other supporting assets depending on what the account actually needs."
+      },
+      {
+        "q": "Can Google Ads Run Without Monthly Website SEO?",
+        "a": "Yes. Paid traffic can be managed separately when the landing experience is already in workable shape. Website SEO can remain a different scope altogether."
+      },
+      {
+        "q": "Can RA Tech Manage Google Ads That Send Traffic to Amazon?",
+        "a": "Yes. Eligible Google campaigns can send traffic to Amazon, and RA Tech can manage that activity as an Amazon advertising agency. Amazon-side measurement may also be used where supported."
+      },
+      {
+        "q": "Is a Specific ROAS or CPA Guaranteed?",
+        "a": "ROAS and CPA cannot be locked in ahead of time. Performance changes with auctions, competitive pressure, demand, pricing, inventory, conversion quality, and conditions on the client side."
+      }
+    ],
+    "source": "google-ads"
+  },
+  "dtc/meta-ads": {
+    "title": "Meta Ads Management Services for Facebook and Instagram Advertising",
+    "intro": [
+      "Meta advertising needs a clear commercial signal behind every campaign. RA Tech builds Meta Ads management services around customer action, creative strength, useful data, and controlled automation across Facebook and Instagram. As an Amazon marketing agency, we also separate Amazon-bound traffic from owned-store traffic so each path uses the right destination and measurement model."
+    ],
+    "sections": [
+      {
+        "title": "Decide What Customer Action Is Worth Paying For",
+        "body": [
+          "A campaign needs a defined job before Meta starts allocating delivery. Discovery, inquiry, purchase, and repeat purchase create different commercial requirements. Our Meta Ads management starts with that customer movement. For brands selling through an owned store and Amazon, we can also work as an Amazon e-commerce agency and keep both conversion paths separate.",
+          "The campaign objective follows the action below:"
+        ],
+        "cards": [
+          {
+            "title": "Discover",
+            "body": [
+              "Introduce the brand or product where broader awareness has a defined commercial role"
+            ]
+          },
+          {
+            "title": "Explore",
+            "body": [
+              "Bring interested people toward a useful product, service, or offer destination"
+            ]
+          },
+          {
+            "title": "Enquire",
+            "body": [
+              "Generate a lead, message, booking, or approved enquiry"
+            ]
+          },
+          {
+            "title": "Purchase",
+            "body": [
+              "Drive an eligible website or commerce conversion"
+            ]
+          },
+          {
+            "title": "Return",
+            "body": [
+              "Re-engage people with earlier website, product, or brand activity"
+            ]
+          },
+          {
+            "title": "Buy Again",
+            "body": [
+              "Reach existing customers when repeat purchase has a clear commercial case"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Meta Pixel and Conversions API Setup for Meta Ads",
+        "body": [
+          "Meta needs usable event data after people interact with the business. Weak event coverage can leave the platform learning from an incomplete picture. Our Meta advertising services review that measurement path first. Wider checkout, data, or store problems can move into e-commerce audit services when they fall outside paid-social management.",
+          "The data review gives each signal a defined role:"
+        ],
+        "cards": [
+          {
+            "title": "Meta Pixel",
+            "body": [
+              "Supported browser-side website activity"
+            ]
+          },
+          {
+            "title": "Conversions API",
+            "body": [
+              "Eligible server-side business events"
+            ]
+          },
+          {
+            "title": "Event coverage",
+            "body": [
+              "Coverage of important funnel actions reaching Meta"
+            ]
+          },
+          {
+            "title": "Deduplication",
+            "body": [
+              "Correct counting across browser and server event versions"
+            ]
+          },
+          {
+            "title": "Event matching",
+            "body": [
+              "Permitted customer information available for stronger matching"
+            ]
+          },
+          {
+            "title": "Purchase value",
+            "body": [
+              "Dependable order values where relevant"
+            ]
+          },
+          {
+            "title": "Lead quality",
+            "body": [
+              "Later CRM or sales outcomes where supported"
+            ]
+          },
+          {
+            "title": "Diagnostics",
+            "body": [
+              "Event-quality and data issues inside the setup"
+            ]
+          }
+        ],
+        "after": [
+          "For Facebook advertising services, signal quality comes before data volume."
+        ]
+      },
+      {
+        "title": "Meta Ads Creative Services for Reels, Video, Carousel and Static Ads",
+        "body": [
+          "Paid social reaches people across feeds, Reels, carousels, and creator-led placements. Each environment changes how quickly the message needs to land. Our Meta Ads creative services build a varied creative pool around the customer response we want. The production direction changes with the format."
+        ],
+        "cards": [
+          {
+            "title": "Product-Led Creative",
+            "body": [
+              "Product-focused ads bring the item, use case, feature, or offer into view quickly."
+            ]
+          },
+          {
+            "title": "Short-Form Video",
+            "body": [
+              "Reels and vertical video use mobile-first framing, clear pacing, and visual information that remains easy to follow."
+            ]
+          },
+          {
+            "title": "Carousel Stories",
+            "body": [
+              "Carousels can separate products, features, use cases, or proof points across several frames."
+            ]
+          },
+          {
+            "title": "Proof-Led Creative",
+            "body": [
+              "Reviews, demonstrations, and approved customer evidence can strengthen credibility when suitable assets are available."
+            ]
+          },
+          {
+            "title": "Partnership Ads",
+            "body": [
+              "Partnership ads can extend approved creator content through paid distribution when permissions and scope support the format."
+            ]
+          },
+          {
+            "title": "Copy and Offer",
+            "body": [
+              "Primary text, headlines, offers, and calls to action need to work with the visual concept. Strong Instagram advertising services keep those elements focused on one customer response."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Set Audience Guardrails for Flexible Delivery",
+        "body": [
+          "Meta can expand delivery beyond narrow audience suggestions, so audience work should guide the system without shrinking reach without a business reason. We use Meta Ads audience targeting to define useful signals and hard boundaries.",
+          "The audience plan can include:",
+          "* Approved geographic, age, or language limits.",
+          "* Existing-customer exclusions where acquisition work needs them.",
+          "* First-party customer lists and supported website signals.",
+          "* Custom Audiences for relevant known groups.",
+          "* Lookalike Audiences where a suitable source exists.",
+          "* Interests and demographics when they add useful context.",
+          "* Advantage+ Audience expansion inside approved controls.",
+          "* Prospecting and retargeting roles come from customer stage and available data."
+        ],
+        "cards": []
+      },
+      {
+        "title": "Meta Advantage+ Campaign Management and Optimization",
+        "body": [
+          "Meta can automate wider delivery decisions when the account gives it strong inputs and clear limits. We use Meta Ads optimization to decide where automation gets room and where business controls remain firm.",
+          "The automation layer covers several areas."
+        ],
+        "cards": [
+          {
+            "title": "Campaign Structure",
+            "body": [
+              "Advantage+ or a more controlled setup is chosen according to the commercial job, customer path, and available data."
+            ]
+          },
+          {
+            "title": "Placement Coverage",
+            "body": [
+              "Automated placements can expand delivery when the available creative can support those environments."
+            ]
+          },
+          {
+            "title": "Budget Distribution",
+            "body": [
+              "Campaign-level automation can move spend inside approved limits and priorities."
+            ]
+          },
+          {
+            "title": "Customer Controls",
+            "body": [
+              "Existing-customer rules, geography, language, and required exclusions remain visible."
+            ]
+          },
+          {
+            "title": "Automation Boundaries",
+            "body": [
+              "Inventory, offer, market, or customer restrictions can limit wider expansion."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Turn Product Data Into an Advertising Input",
+        "body": [
+          "For ecommerce accounts, the catalog gives Meta structured product information for personalized advertising. Weak catalog data can disrupt product selection or destination accuracy. Our Facebook e-commerce advertising work reviews the catalog as an advertising input."
+        ],
+        "cards": [
+          {
+            "title": "Product identity",
+            "body": [
+              "Accurate item information"
+            ]
+          },
+          {
+            "title": "Price",
+            "body": [
+              "Current selling price"
+            ]
+          },
+          {
+            "title": "Availability",
+            "body": [
+              "Current stock status"
+            ]
+          },
+          {
+            "title": "Product URL",
+            "body": [
+              "Correct ecommerce destination"
+            ]
+          },
+          {
+            "title": "Product media",
+            "body": [
+              "Usable images or supported video"
+            ]
+          },
+          {
+            "title": "Variants",
+            "body": [
+              "Accurate product relationships"
+            ]
+          },
+          {
+            "title": "Product sets",
+            "body": [
+              "Useful grouping for advertising"
+            ]
+          },
+          {
+            "title": "Catalog health",
+            "body": [
+              "Errors, rejected products, or stale information"
+            ]
+          }
+        ],
+        "after": [
+          "Creative concepts remain outside this catalog review."
+        ]
+      },
+      {
+        "title": "Do Not Lose the Customer After the Ad",
+        "body": [
+          "A strong ad can lose momentum when the destination changes the offer or adds friction on mobile. We review message continuity, offer clarity, product or service consistency, mobile usability, and the next conversion step. Broader content, technical, or organic work can move into website SEO services when it falls outside paid-social management. The advertising review remains focused on the paid visitor’s path."
+        ],
+        "cards": []
+      },
+      {
+        "title": "Send Meta Traffic to Amazon Without Losing the Sale",
+        "body": [
+          "Facebook and Instagram traffic ending on Amazon needs a different measurement path from traffic ending on an owned website. As an Amazon advertising agency, we use Amazon Attribution where the advertiser, destination, and market support it. Product readiness is checked before additional paid traffic moves toward the listing or Store."
+        ],
+        "cards": [
+          {
+            "title": "Destination",
+            "body": [
+              "Approved Amazon detail page or Store"
+            ]
+          },
+          {
+            "title": "Measurement",
+            "body": [
+              "Amazon Attribution where eligible"
+            ]
+          },
+          {
+            "title": "Campaign tagging",
+            "body": [
+              "Approved Facebook or Instagram attribution tags"
+            ]
+          },
+          {
+            "title": "Shopping activity",
+            "body": [
+              "Detail-page views and add-to-carts"
+            ]
+          },
+          {
+            "title": "Sales view",
+            "body": [
+              "Amazon-attributed purchases and sales"
+            ]
+          },
+          {
+            "title": "Referral program",
+            "body": [
+              "Brand Referral Bonus where current eligibility applies"
+            ]
+          }
+        ],
+        "after": [
+          "Amazon product listing services can address destination issues before media spend increases."
+        ]
+      },
+      {
+        "title": "Meta Ads Reporting for ROAS, Cost Per Result and Creative Performance",
+        "body": [
+          "Paid-social results can weaken for different reasons. Creative response may drop, acquisition costs may rise, or lead quality may change. We use Meta Ads campaign management to separate those signals before choosing the next move.",
+          "The review focuses on the following points:"
+        ],
+        "cards": [
+          {
+            "title": "Creative Response",
+            "body": [
+              "Spend, reach, frequency, click response, and conversions can show when a creative angle needs replacement."
+            ]
+          },
+          {
+            "title": "Acquisition Economics",
+            "body": [
+              "Cost per result, purchase value, return on ad spend, and lead economics are read against the campaign’s commercial job."
+            ]
+          },
+          {
+            "title": "Customer Quality",
+            "body": [
+              "Qualified leads, completed sales, repeat customers, CRM outcomes, or customer-value signals sharpen the review where available."
+            ]
+          },
+          {
+            "title": "Attribution Context",
+            "body": [
+              "Meta-attributed conversions are read alongside wider business evidence. Incremental measurement can add another view where supported."
+            ]
+          },
+          {
+            "title": "Next Test",
+            "body": [
+              "Creative angle, offer, destination, customer strategy, or campaign structure can become the next controlled test."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Inside an RA Tech Meta Ads Project",
+        "body": [
+          "A Meta account can have several things moving at once. Creative feedback, catalog fixes, campaign changes, and tracking inputs may all need action in the same week. RA Tech keeps Meta Ads management services coordinated so Instagram Ads management work does not get lost between client decisions and account updates.",
+          "The campaign stays organized through eight working areas:"
+        ],
+        "cards": [
+          {
+            "title": "Confirm Working Scope",
+            "body": [
+              "We agree on brands, markets, destinations, priorities, and account boundaries before work starts. Everyone then works from the same reference point when campaign requests, creative needs, or client changes begin coming in."
+            ]
+          },
+          {
+            "title": "Open Required Access",
+            "body": [
+              "Access follows the scope already agreed. Meta, website, ecommerce, catalog, analytics, CRM, and Amazon Attribution details are checked early so missing permissions do not interrupt work once the account is active."
+            ]
+          },
+          {
+            "title": "Bring Inputs Together",
+            "body": [
+              "Creative files, offer details, product updates, tracking notes, and client requests come into one working view. The team can see what is ready, what needs input, and what should move next."
+            ]
+          },
+          {
+            "title": "Put Owners in Place",
+            "body": [
+              "Research, campaign changes, creative production, catalog work, client communication, and reporting each have a clear owner. Work moves faster when responsibility is visible and the next handoff is already understood."
+            ]
+          },
+          {
+            "title": "Mark Approval Points",
+            "body": [
+              "Certain changes need approval before they go live. Budget shifts, new campaigns, fresh offers, and major creative changes are marked early so the right decision reaches the team before timing becomes a problem."
+            ]
+          },
+          {
+            "title": "Keep Work Visible",
+            "body": [
+              "Open requests, campaign changes, deadlines, feedback, and unresolved items remain visible in the project record. Account status stays clear without anyone having to rebuild the picture from separate messages or scattered comments."
+            ]
+          },
+          {
+            "title": "Review What Changed",
+            "body": [
+              "Completed work and open decisions come together with current account conditions and client feedback. The review starts from what actually happened during the cycle, giving both teams a cleaner basis for discussion."
+            ]
+          },
+          {
+            "title": "Set Next Priorities",
+            "body": [
+              "The next period begins with a short list of approved priorities. RA Tech carries forward work that still needs action and closes completed items, keeping the upcoming cycle focused on what remains active."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Meta Ads Management Deliverables and Reporting",
+        "body": [
+          "A managed account should leave a clear record of decisions, changes, and next actions. We organize those outputs around the current Meta Ads management services scope.",
+          "The working files can include:",
+          "* Measurement and event notes for current account setup.",
+          "* Customer-action plan covering campaign commercial roles.",
+          "* Audience guardrail map covering approved controls.",
+          "* Creative direction file covering planned assets.",
+          "* Catalog action file where ecommerce data applies.",
+          "* Advantage+ control notes for campaign automation.",
+          "* Paid-destination recommendations for conversion-path issues.",
+          "* Amazon Attribution notes where applicable.",
+          "* Performance and testing report for account review."
+        ],
+        "cards": []
+      },
+      {
+        "title": "Find What Your Meta Ads Are Missing",
+        "body": [
+          "Weak signals, tired creative, loose automation, or an unclear customer path can drain paid-social spend without creating an obvious account failure. RA Tech starts with the account as it stands and finds where control needs work.",
+          "New clients can begin with a free initial account audit. Eligible recurring Meta Ads management services can also start with a seven-day free trial.",
+          "Find the weak point before adding more spend."
+        ],
+        "cards": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can RA Tech Take Over an Existing Meta Ads Account?",
+        "a": "We can review current campaigns, account history, event setup, creative, audience settings, and existing controls before the next management scope is agreed."
+      },
+      {
+        "q": "Can Management Cover Instagram Ads Without Facebook Campaigns?",
+        "a": "A narrower Instagram Ads management scope can be considered when the campaign and available placements support that requirement. Facebook Ads management can remain outside scope where the approved setup allows it."
+      },
+      {
+        "q": "Can RA Tech Manage Ads for Several Brands or Stores?",
+        "a": "Several brands or stores can be managed when budgets, ownership, creative, destinations, and reporting responsibilities are separated clearly."
+      },
+      {
+        "q": "Can Existing Campaign History Be Retained?",
+        "a": "Historical campaign data can remain available during a takeover as we review what remains useful."
+      },
+      {
+        "q": "Are New Creative Assets Included?",
+        "a": "Creative production depends on the approved engagement. Static, video, carousel, copy, or supporting asset requirements are agreed before production."
+      },
+      {
+        "q": "Can We Supply Our Own Creator Content?",
+        "a": "Approved creator material can be used when the brand has the required rights and the content suits the intended ad format."
+      },
+      {
+        "q": "Can Meta Ads Run Without Monthly Website SEO?",
+        "a": "Paid-social management can run separately when landing destinations are ready for traffic."
+      },
+      {
+        "q": "Can RA Tech Send Facebook and Instagram Traffic to Amazon?",
+        "a": "Eligible campaigns can send traffic to approved Amazon destinations and use Amazon Attribution where supported."
+      },
+      {
+        "q": "Is a Fixed ROAS or Cost Per Purchase Guaranteed?",
+        "a": "Fixed outcomes cannot be guaranteed because creative response, competition, pricing, conversion quality, demand, inventory, and account data can affect performance."
+      }
+    ],
+    "source": "meta-ads"
   }
 }
