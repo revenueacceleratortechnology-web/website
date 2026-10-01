@@ -3,19 +3,44 @@
 import { useState } from "react";
 import { site, revenueBands } from "@/lib/content";
 
-type Errors = Partial<Record<"name" | "email" | "company", string>>;
+type Errors = Partial<
+  Record<"name" | "email" | "company" | "phone" | "storeUrl" | "message" | "form", string>
+>;
+
+const SERVICE_OPTIONS = [
+  "Full-service management",
+  "PPC management",
+  "Amazon SEO",
+  "Account audit",
+  "Design & creative",
+  "Troubleshooting & recovery",
+  "DTC / website growth",
+  "Not sure yet",
+];
 
 export function AuditForm() {
   const [sent, setSent] = useState(false);
-  const [enquiry, setEnquiry] = useState("");
+  const [submitting, setSubmitting] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
+  const [services, setServices] = useState<string[]>([]);
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function toggleService(option: string) {
+    setServices((prev) =>
+      prev.includes(option) ? prev.filter((s) => s !== option) : [...prev, option]
+    );
+  }
+
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     const name = String(data.get("name") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
     const company = String(data.get("company") ?? "").trim();
+    const phone = String(data.get("phone") ?? "").trim();
+    const storeUrl = String(data.get("storeUrl") ?? "").trim();
+    const revenue = String(data.get("revenue") ?? "");
+    const message = String(data.get("message") ?? "").trim();
+    const websiteUrl = String(data.get("website_url") ?? "");
 
     const next: Errors = {};
     if (!name) next.name = "Enter your name so we know who we are meeting.";
@@ -25,9 +50,46 @@ export function AuditForm() {
       next.email = "That email address is missing an @ or a domain.";
 
     setErrors(next);
-    if (Object.keys(next).length === 0) {
-      setEnquiry(`Hello RA Tech, I would like an Amazon account audit.\nName: ${name}\nBrand: ${company}\nEmail: ${email}\nMonthly revenue: ${String(data.get("revenue") ?? "")}`);
-      setSent(true);
+    if (Object.keys(next).length > 0) return;
+
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          name,
+          company,
+          email,
+          phone,
+          storeUrl,
+          revenue,
+          services,
+          message,
+          website_url: websiteUrl,
+          source: window.location.pathname,
+        }),
+      });
+
+      const result = await res.json().catch(() => ({ ok: false }));
+
+      if (res.ok && result.ok) {
+        setSent(true);
+      } else {
+        if (result.errors && typeof result.errors === "object") {
+          setErrors(result.errors as Errors);
+        } else {
+          setErrors({
+            form: `We couldn't send that just now. Please try again or call ${site.phone}.`,
+          });
+        }
+      }
+    } catch {
+      setErrors({
+        form: `We couldn't send that just now. Please try again or call ${site.phone}.`,
+      });
+    } finally {
+      setSubmitting(false);
     }
   }
 
@@ -49,19 +111,14 @@ export function AuditForm() {
             />
           </svg>
         </span>
-        <p className="display mt-5 text-xl text-ink">Your enquiry is ready</p>
+        <p className="display mt-5 text-xl text-ink">Thanks — we have your details</p>
         <p className="mt-2 text-sm leading-relaxed text-ash">
-          Copy your enquiry and share it with the team using your preferred messaging app, or call {site.phone}. Your details have not been sent.
+          A member of the RA Tech team will be in touch shortly. Need us sooner? Call{" "}
+          <a href={`tel:${site.phone.replace(/[^\d+]/g, "")}`} className="font-semibold text-signal">
+            {site.phone}
+          </a>
+          .
         </p>
-        <textarea aria-label="Prepared enquiry" readOnly value={enquiry} className="mt-5 h-40 w-full rounded-lg border border-hairline p-3 text-left text-sm text-ink" />
-        <a href={`tel:${site.phone.replace(/[^\d+]/g, "")}`} className="mt-4 block font-semibold text-signal">Call {site.phone}</a>
-        <button
-          type="button"
-          onClick={() => setSent(false)}
-          className="mt-5 text-sm font-semibold text-signal underline underline-offset-4"
-        >
-          Edit enquiry
-        </button>
       </div>
     );
   }
@@ -97,6 +154,19 @@ export function AuditForm() {
           autoComplete="email"
           error={errors.email}
         />
+        <Field
+          label="Phone"
+          name="phone"
+          type="tel"
+          autoComplete="tel"
+          error={errors.phone}
+        />
+        <Field
+          label="Amazon store or website URL"
+          name="storeUrl"
+          type="url"
+          error={errors.storeUrl}
+        />
 
         <div>
           <label
@@ -118,17 +188,78 @@ export function AuditForm() {
             ))}
           </select>
         </div>
+
+        <div>
+          <span className="mb-1.5 block text-sm font-medium text-ink">
+            What do you need help with?
+          </span>
+          <div className="grid grid-cols-2 gap-2">
+            {SERVICE_OPTIONS.map((option) => {
+              const checked = services.includes(option);
+              return (
+                <label
+                  key={option}
+                  className={`cursor-pointer rounded-full border px-3 py-2 text-center text-xs font-medium transition-colors ${
+                    checked
+                      ? "border-ink bg-ink text-paper"
+                      : "border-hairline text-ink"
+                  }`}
+                >
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value={option}
+                    checked={checked}
+                    onChange={() => toggleService(option)}
+                    className="sr-only"
+                  />
+                  {option}
+                </label>
+              );
+            })}
+          </div>
+        </div>
+
+        <div>
+          <label
+            htmlFor="message"
+            className="mb-1.5 block text-sm font-medium text-ink"
+          >
+            Anything else we should know?
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            className="w-full rounded-xl border border-hairline bg-paper px-4 py-3 text-sm text-ink transition-colors focus:border-signal"
+          />
+        </div>
+
+        <div className="relative">
+          <input
+            name="website_url"
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden
+            className="absolute -left-[9999px]"
+          />
+        </div>
       </div>
+
+      {errors.form && (
+        <p className="mt-4 text-sm text-signal">{errors.form}</p>
+      )}
 
       <button
         type="submit"
-        className="mt-6 w-full rounded-full bg-ink px-6 py-3.5 text-sm font-semibold text-paper transition-colors hover:bg-slate"
+        disabled={submitting}
+        className="mt-6 w-full rounded-full bg-ink px-6 py-3.5 text-sm font-semibold text-paper transition-colors hover:bg-slate disabled:cursor-not-allowed disabled:opacity-60"
       >
-        Prepare my enquiry
+        {submitting ? "Sending…" : "Request my free audit"}
       </button>
 
       <p className="mt-3 text-center text-xs text-ash">
-        This prepares your enquiry on your device. It does not send or save your details.
+        We only use your details to respond to this enquiry.
       </p>
     </form>
   );
