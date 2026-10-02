@@ -73,6 +73,8 @@ async function ensureTable(pool: Pool): Promise<void> {
           user_agent text
         )`
       )
+      // Lock the table out of Supabase's public REST API; the owner role used here is unaffected.
+      .then(() => pool.query("ALTER TABLE leads ENABLE ROW LEVEL SECURITY"))
       .then(() => undefined)
       .catch((err) => {
         // Allow retry on next call if table creation failed.
