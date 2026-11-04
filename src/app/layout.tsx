@@ -23,7 +23,10 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://revenueaccelerator.tech"),
+  metadataBase: new URL("https://www.revenueacceleratortech.com"),
+  verification: {
+    google: "Az0lvCceurTPuTNlI1plvRVqey0XHxyQOXWSKyGDofg",
+  },
   title: {
     default: "RA Tech — A full-service Amazon agency for growing brands",
     template: "%s — RA Tech",
