@@ -27,6 +27,9 @@ export const metadata: Metadata = {
   verification: {
     google: "Az0lvCceurTPuTNlI1plvRVqey0XHxyQOXWSKyGDofg",
   },
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "RA Tech — A full-service Amazon agency for growing brands",
     template: "%s — RA Tech",
@@ -47,6 +50,8 @@ export const metadata: Metadata = {
       "A full-service Amazon agency for growing brands. PPC, SEO, creative, platform, and account management in one working relationship.",
     type: "website",
     siteName: "RA Tech",
+    url: "/",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
